@@ -121,7 +121,7 @@ const codviajes = [
     spots: 6,
   },
    {
-    id: 5,
+    id: 7,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
@@ -139,7 +139,7 @@ const codviajes = [
     spots: 20,
   },
    {
-    id: 5,
+    id: 8,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
@@ -157,7 +157,7 @@ const codviajes = [
     spots: 20,
   },
    {
-    id: 5,
+    id: 9,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
