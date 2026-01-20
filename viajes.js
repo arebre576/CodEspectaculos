@@ -14,11 +14,13 @@ const defaultConfig = {
 const trips = [
   {
     id: 1,
-    artist: "Avenged Sevenfold",
-    tour: "Tour 2026",
+    artist: "José Madero",
+    tour: "Erase una bestia",
     city: "Estadio GNP Seguros, CDMX",
-    date: "17 de Enero 2026",
-    image: "./images/AvengedSevenfold.jpg",
+    date: "24 de Enero, 2026",
+    dates: ["30 de Enero, 2026", "31 de Enero, 2026"],
+    schedules: ["7:00 PM", "9:30 PM"],
+    image: "./images/PepeMadero.jpg",
     price: 629,
     originalPrice: 653,
     includes: [
@@ -277,6 +279,42 @@ function addToCart(tripId) {
 
   const modalContent = document.getElementById("modal-content");
   modalContent.innerHTML = `
+  <div>
+  <label class="block text-sm font-medium text-gray-300 mb-2">
+    Selecciona fecha
+  </label>
+  <select id="fecha" required
+    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+
+    <option value="">Selecciona fecha</option>
+    ${trip.dates
+      .map(
+        (d) => `
+      <option value="${d}">${d}</option>
+    `
+      )
+      .join("")}
+  </select>
+</div>
+
+<div>
+  <label class="block text-sm font-medium text-gray-300 mb-2">
+    Selecciona horario
+  </label>
+  <select id="horario" required
+    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+
+    <option value="">Selecciona horario</option>
+    ${trip.schedules
+      .map(
+        (h) => `
+      <option value="${h}">${h}</option>
+    `
+      )
+      .join("")}
+  </select>
+</div>
+
         <div class="py-4">
           <h3 class="text-2xl font-bold mb-2">Completa tu reserva</h3>
           <p class="text-gray-400 mb-6">Información de los pasajeros</p>
@@ -307,6 +345,9 @@ function addToCart(tripId) {
               <p class="text-sm text-gray-300"><strong>Resumen:</strong></p>
               <p class="text-sm text-gray-400">${trip.artist} - ${trip.tour}</p>
               <p class="text-sm text-gray-400">${trip.city} • ${trip.date}</p>
+              <p class="text-sm text-gray-400">📅 ${fecha}</p>
+<p class="text-sm text-gray-400">⏰ ${horario}</p>
+
               <p id="total-price" class="text-lg font-bold text-pink-400 mt-2"></p>
               <p id="deposit-price" class="text-sm text-gray-400 mt-1"></p>
             </div>
@@ -386,6 +427,8 @@ function sendWhatsApp(tripId) {
   if (!trip) return;
 
   const pasajeros = parseInt(document.getElementById("pasajeros").value);
+  const fecha = document.getElementById("fecha").value;
+  const horario = document.getElementById("horario").value;
 
   let pasajerosInfo = "";
   for (let i = 0; i < pasajeros; i++) {
@@ -406,7 +449,9 @@ function sendWhatsApp(tripId) {
 📋 *Información del Evento:*
 🎤 Artista: ${trip.artist}
 🎭 Tour: ${trip.tour}
-📅 Fecha: ${trip.date}
+📅 Fecha: ${fecha}
+⏰ Horario: ${horario}
+
 💰 Precio por persona: $${trip.price.toLocaleString()} MXN
 
 👥 *Información de Pasajeros (${pasajeros}):*${pasajerosInfo}

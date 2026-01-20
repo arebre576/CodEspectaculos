@@ -17,7 +17,8 @@ const codviajes = [
     artist: "Avenged Seeevenfold",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-    date: "17 de Enero 2026",
+    dates: ["30 de Enero, 2026", "31 de Enero, 2026"],
+    schedules: ["7:00 PM", "9:30 PM"],
     image: "./images/AvengedSevenfold.jpg",
     price: 629,
     originalPrice: 653,
@@ -120,7 +121,7 @@ const codviajes = [
     ],
     spots: 6,
   },
-   {
+  {
     id: 7,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
@@ -138,7 +139,7 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 8,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
@@ -156,7 +157,7 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 9,
     artist: "My Chemical Romance",
     tour: "Tour 2026",
@@ -202,7 +203,9 @@ ${
               codviaje.originalPrice > codviaje.price
                 ? `
               <div class="absolute top-3 left-3 px-3 py-1 bg-green-500 rounded-full text-xs font-semibold">
-                -${Math.round((1 - codviaje.price / codviaje.originalPrice) * 100)}%
+                -${Math.round(
+                  (1 - codviaje.price / codviaje.originalPrice) * 100
+                )}%
               </div>
             `
                 : ""
@@ -211,8 +214,10 @@ ${
           <div class="p-5">
             <div class="flex items-start justify-between mb-2">
               <div>
+              
                 <h3 class="text-xl font-bold">${codviaje.artist}</h3>
                 <p class="text-purple-400 text-sm">${codviaje.tour}</p>
+                
               </div>
             </div>
             <div class="flex items-center gap-2 text-gray-400 text-sm mb-3">
@@ -331,7 +336,43 @@ function addToCart(codviajeId) {
 
   const modalContent = document.getElementById("modal-content");
   modalContent.innerHTML = `
-        <div class="py-4">
+  <div>
+  <label class="block text-sm font-medium text-gray-300 mb-2">
+    Selecciona fecha
+  </label>
+  <select id="fecha" required
+    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+
+    <option value="">Selecciona fecha</option>
+    ${trip.dates
+      .map(
+        (d) => `
+      <option value="${d}">${d}</option>
+    `
+      )
+      .join("")}
+  </select>
+</div>
+
+<div>
+  <label class="block text-sm font-medium text-gray-300 mb-2">
+    Selecciona horario
+  </label>
+  <select id="horario" required
+    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+
+    <option value="">Selecciona horario</option>
+    ${trip.schedules
+      .map(
+        (h) => `
+      <option value="${h}">${h}</option>
+    `
+      )
+      .join("")}
+  </select>
+</div>
+      
+  <div class="py-4">
           <h3 class="text-2xl font-bold mb-2">Completa tu reserva</h3>
           <p class="text-gray-400 mb-6">Información de los pasajeros</p>
           
@@ -359,8 +400,15 @@ function addToCart(codviajeId) {
 
             <div id="summary-container" class="hidden bg-pink-500/10 border border-pink-500/30 rounded-xl p-4">
               <p class="text-sm text-gray-300"><strong>Resumen:</strong></p>
-              <p class="text-sm text-gray-400">${codviaje.artist} - ${codviaje.tour}</p>
-              <p class="text-sm text-gray-400">${codviaje.city} • ${codviaje.date}</p>
+              <p class="text-sm text-gray-400">${codviaje.artist} - ${
+    codviaje.tour
+  }</p>
+              <p class="text-sm text-gray-400">${codviaje.city} • ${
+    codviaje.date
+  }</p>
+  <p class="text-sm text-gray-400">📅 ${fecha}</p>
+<p class="text-sm text-gray-400">⏰ ${horario}</p>
+
               <p id="total-price" class="text-lg font-bold text-pink-400 mt-2"></p>
               <p id="deposit-price" class="text-sm text-gray-400 mt-1"></p>
             </div>
@@ -438,6 +486,8 @@ function renderPassengerForms(count, codviaje) {
 function sendWhatsApp(codviajeId) {
   const codviaje = codviajes.find((t) => t.id === codviajeId);
   if (!codviaje) return;
+  const fecha = document.getElementById("fecha").value;
+  const horario = document.getElementById("horario").value;
 
   const pasajeros = parseInt(document.getElementById("pasajeros").value);
 
@@ -460,7 +510,8 @@ function sendWhatsApp(codviajeId) {
 📋 *Información del Evento:*
 🎤 Artista: ${codviaje.artist}
 🎭 Tour: ${codviaje.tour}
-📅 Fecha: ${codviaje.date}
+📅 Fecha: ${fecha}
+⏰ Horario: ${horario}
 💰 Precio por persona: $${codviaje.price.toLocaleString()} MXN
 
 👥 *Información de Pasajeros (${pasajeros}):*${pasajerosInfo}

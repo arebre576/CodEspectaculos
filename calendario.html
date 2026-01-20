@@ -18,17 +18,44 @@
  
   <div id="app" class="h-full w-full bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-900 overflow-auto"><!-- Header -->
    <header class="bg-black/40 border-b border-purple-500/30 px-6 py-4 backdrop-blur-sm">
+       <nav class="relative z-10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-40 h-40 rounded-xl flex items-center justify-center">
+              <img src="./logo.png" alt="Guitarra" class="w-40 h-40" />
+            </div>
+            <span
+              id="nav-title"
+              class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
+              >COD Espectaculos</span
+            >
+          </div>
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Destinos</a
+            >
+            <a
+              href="./funcion.html"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Cómo Funciona</a
+            >
+                        <a
+              href="./calendario.html"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Calendario</a
+            >
+            <a
+              href="./contacto.html"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </nav>
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-     <div class="flex items-center gap-3">
-      <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/50">
-       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-       </svg>
-      </div>
-      <div>
-       <h1 id="calendar-title" class="text-xl font-bold text-white">Calendario de COD</h1>
-       <p id="company-name" class="text-purple-400 text-sm font-medium">Viajes Redondos a Conciertos</p>
-      </div>
-     </div><!-- Navegadors -->
+  
      <div class="flex items-center gap-4"><button id="prev-month" class="p-2 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 text-white transition-all hover:scale-110">
        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
        </svg></button> <span id="current-month" class="text-white font-bold text-lg min-w-[180px] text-center"></span> <button id="next-month" class="p-2 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 text-white transition-all hover:scale-110">
