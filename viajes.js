@@ -14,15 +14,14 @@ const defaultConfig = {
 const trips = [
   {
     id: 1,
-    artist: "José Madero",
-    tour: "Erase una bestia",
-    city: "Estadio GNP Seguros, CDMX",
-    date: "24 de Enero, 2026",
+     artist: "Kanye West",
+    tour: "Tour 2026",
+    city: "Plaza de Toros, CDMX",
     dates: ["30 de Enero, 2026", "31 de Enero, 2026"],
-    schedules: ["7:00 PM", "9:30 PM"],
-    image: "./images/PepeMadero.jpg",
+    schedules: ["2:00 PM"],
+    image: "./images/Kayne.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -35,12 +34,13 @@ const trips = [
   {
     id: 2,
     artist: "José Madero",
-    tour: "Erase una bestia",
+    tour: "Erase una bestia Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-    date: "24 de Enero, 2026",
-    image: "./images/PepeMadero.jpg",
+   dates: ["24 de Enero, 2026"],
+    schedules: ["2:00 PM"],
+    image: "./images/pepemadero.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -48,17 +48,18 @@ const trips = [
       "Seguro de viaje",
       "Gafete Conmemorativo",
     ],
-    spots: 12,
+    spots: 16,
   },
   {
     id: 3,
-    artist: "Kangin",
-    tour: "Faanmeting 2026",
-    city: "Auditorio BB, CDMX",
-    date: "28 de Enero, 2026",
-    image: "./images/Kangin.jpg",
+    artist: "My Chemical Romance",
+    tour: "Tour 2026",
+    city: "Estadio GNP Seguros, CDMX",
+    dates: ["13 de Febrero 2026", "14 de Febrero, 2026"],
+    schedules: ["11:30AM","1:00 PM"],
+    image: "./images/MCR.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -66,17 +67,18 @@ const trips = [
       "Seguro de viaje",
       "Gafete Conmemorativo",
     ],
-    spots: 5,
+    spots: 20,
   },
   {
     id: 4,
-    artist: "Kanye West",
+    artist: "Doja Cat",
     tour: "Tour 2026",
     city: "Plaza de Toros, CDMX",
-    date: "30 y 31 de Enero, 2026",
-    image: "./images/Kayne.jpg",
+    dates: [ "18 de Febrero, 2026"],
+    schedules: ["2:00 PM"],
+    image: "./images/dojacat.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -88,13 +90,14 @@ const trips = [
   },
   {
     id: 5,
-    artist: "My Chemical Romance",
+    artist: "Kali Uchis",
     tour: "Tour 2026",
-    city: "Estadio GNP Seguros, CDMX",
-    date: "13 y 14 de Febrero, 2026",
-    image: "./images/MCR.jpg",
+    city: "Palacio de los Deportes, CDMX",
+    dates: ["25 de Febrero, 2026"],
+    schedules: ["2:00 PM"],
+    image: "./images/KaliUchis.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -109,10 +112,11 @@ const trips = [
     artist: "Big Time Rush",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-    date: "21 de Febrero, 2026",
+    dates: [ "21 de Febrero, 2026"],
+    schedules: ["11:30AM","1:00 PM", "2:00PM"],
     image: "./images/BTR.jpg",
     price: 629,
-    originalPrice: 653,
+    originalPrice: 655,
     includes: [
       "Viaje redondo",
       "Bebida y Snack",
@@ -166,7 +170,7 @@ ${
             <div class="flex items-center gap-2 text-gray-400 text-sm mb-3">
               <span>📍 ${trip.city}</span>
               <span>•</span>
-              <span>📅 ${trip.date}</span>
+              <span>📅 ${trip.dates}</span>
             </div>
             <div class="flex items-end justify-between">
               <div>
@@ -345,8 +349,12 @@ function addToCart(tripId) {
               <p class="text-sm text-gray-300"><strong>Resumen:</strong></p>
               <p class="text-sm text-gray-400">${trip.artist} - ${trip.tour}</p>
               <p class="text-sm text-gray-400">${trip.city} • ${trip.date}</p>
-              <p class="text-sm text-gray-400">📅 ${fecha}</p>
-<p class="text-sm text-gray-400">⏰ ${horario}</p>
+              <p class="text-sm text-gray-400">
+  📅 <span id="resumen-fecha">Selecciona fecha</span>
+</p>
+<p class="text-sm text-gray-400">
+  ⏰ <span id="resumen-horario">Selecciona horario</span>
+</p>
 
               <p id="total-price" class="text-lg font-bold text-pink-400 mt-2"></p>
               <p id="deposit-price" class="text-sm text-gray-400 mt-1"></p>
