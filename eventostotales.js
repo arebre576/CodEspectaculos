@@ -394,7 +394,7 @@ const codviajes = [
   },
   {
     id: 9,
-    artist: "Doja Cat",
+    artist: "Doja Caaaaat",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
       dates: ["18 de Febrero, 2026"],
