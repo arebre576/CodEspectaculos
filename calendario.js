@@ -116,7 +116,7 @@ const concertEvents = [
     tour: "Tour 2026",
     city: "GNP, CDMX",
     date: "13 de Febrero 2026",
-    dateObj: new Date(2026, 1, 13),
+    dateObj: new Date(2026, 2, 7),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -128,6 +128,25 @@ const concertEvents = [
     ],
     spots: 15,
     logo: `<svg viewBox="0 0 100 100" class="w-full h-full"><defs><linearGradient id="dua" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF1493"/><stop offset="100%" style="stop-color:#9370DB"/></linearGradient></defs><circle cx="50" cy="50" r="45" fill="url(#dua)"/><text x="50" y="65" font-size="36" font-weight="900" text-anchor="middle" fill="white" font-family="Arial">DL</text></svg>`,
+  },
+  {
+    id: 6,
+    artist: "",
+    tour: "Tour 2026",
+    city: "GNP, CDMX",
+    date: "7 de abril 2026",
+    dateObj: new Date(2026, 2, 7),
+    price: 629,
+    originalPrice: 653,
+    includes: [
+      "Viaje redondo",
+      "Bebida y Snack",
+      "Coordinador de viaje",
+      "Seguro de viaje",
+      "Gafete Conmemorativo",
+    ],
+    spots: 15,
+    logo: `<img src="./images/acdclogo.png" class="w-full h-full object-contain" />`,
   },
 ];
 
@@ -151,7 +170,7 @@ const monthNames = [
 ];
 
 let currentEventData = null;
-const WHATSAPP_NUMBER = "5215512345678"; // Cambia este número por el tuyo
+const WHATSAPP_NUMBER = "522225485659"; // Cambia este número por el tuyo
 
 function getEventsForDate(year, month, day) {
   return concertEvents.filter((event) => {
