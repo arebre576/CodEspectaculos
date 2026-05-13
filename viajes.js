@@ -14,7 +14,7 @@ const defaultConfig = {
 const trips = [
   {
     id: 1,
-     artist: "Centimillimental",
+     artist: "centisss",
     tour: "Tour 2026",
     city: "La Maraka, CDMX",
      dates: [ "1 de Marzo, 2026", "2 de Marzo, 2026"],
