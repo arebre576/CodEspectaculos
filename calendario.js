@@ -51,15 +51,15 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 12,
-    logo: `<img src="./logos/monstax.png" class="w-full h-full" />`,
+    logo: `<img src="./logos/monstax.png" class="w-full h-full object-contain" />`,
   },
   {
     id: 3,
-    artist: "Kangin",
+    artist: "TK from Ling tosite sigure ",
     tour: "Faanmeting 2026",
-    city: "Auditorio BB, CDMX",
-    date: "28 de Enero, 2026",
-    dateObj: new Date(2026, 0, 28),
+    city: "La maraka, CDMX",
+    date: "6 de Junio, 2026",
+    dateObj: new Date(2026, 5, 6),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -70,15 +70,15 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 5,
-    logo: `<svg viewBox="0 0 100 100" class="w-full h-full"><defs><linearGradient id="cold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#3498db"/><stop offset="50%" style="stop-color:#9b59b6"/><stop offset="100%" style="stop-color:#e74c3c"/></linearGradient></defs><circle cx="50" cy="50" r="45" fill="url(#cold)"/><circle cx="35" cy="45" r="8" fill="#fff"/><circle cx="65" cy="45" r="8" fill="#fff"/><path d="M30 65 Q50 75 70 65" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg>`,
+    logo: `<img src="./logos/tk.png" class="w-full h-full object-contain" />`,
   },
   {
     id: 4,
-    artist: "Kanye West",
+    artist: "Milo J",
     tour: " Tour 2026",
-    city: "Plaza de Toros, CDMX",
-    date: "30 y 31 de Enero 2026",
-    dateObj: new Date(2026, 0, 30),
+    city: "Palacio de los Deportes, CDMX",
+    date: "6 de Junio 2026",
+    dateObj: new Date(2026, 5, 6),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -89,15 +89,15 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 3,
-    logo: `<svg viewBox="0 0 100 100" class="w-full h-full"><rect width="100" height="100" fill="#FF6B9D"/><circle cx="35" cy="35" r="12" fill="#fff"/><circle cx="65" cy="35" r="12" fill="#fff"/><circle cx="35" cy="35" r="6" fill="#000"/><circle cx="65" cy="35" r="6" fill="#000"/><ellipse cx="50" cy="55" rx="15" ry="8" fill="#fff"/><path d="M30 70 Q50 80 70 70" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/></svg>`,
+    logo: `<img src="./logos/miloj.png" class="w-full h-full object-contain" />`,
   },
   {
     id: 5,
-    artist: "Kanye West",
+    artist: "The Rose",
     tour: " Tour 2026",
-    city: "Plaza de Toros, CDMX",
-    date: "31 de Enero 2026",
-    dateObj: new Date(2026, 0, 31),
+    city: "ARENA CDMX, CDMX",
+    date: "17 de Junio 2026",
+    dateObj: new Date(2026, 5, 17),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -108,15 +108,15 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 8,
-    logo: `<svg viewBox="0 0 100 100" class="w-full h-full"><defs><linearGradient id="weekend" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#e74c3c"/><stop offset="100%" style="stop-color:#000"/></linearGradient></defs><rect width="100" height="100" fill="url(#weekend)"/><text x="50" y="60" font-size="28" font-weight="900" text-anchor="middle" fill="white" font-family="Arial Black">XO</text></svg>`,
+    logo: `<img src="./logos/therose.png" class="w-full h-full object-contain" />`,
   },
   {
     id: 6,
-    artist: "My Chemical Romance",
+    artist: "Zayn",
     tour: "Tour 2026",
-    city: "GNP, CDMX",
-    date: "13 de Febrero 2026",
-    dateObj: new Date(2026, 2, 7),
+    city: "Estadio GNP, CDMX",
+    date: "20 de Junio 2026",
+    dateObj: new Date(2026, 5, 20),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -127,15 +127,15 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 15,
-    logo: `<svg viewBox="0 0 100 100" class="w-full h-full"><defs><linearGradient id="dua" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF1493"/><stop offset="100%" style="stop-color:#9370DB"/></linearGradient></defs><circle cx="50" cy="50" r="45" fill="url(#dua)"/><text x="50" y="65" font-size="36" font-weight="900" text-anchor="middle" fill="white" font-family="Arial">DL</text></svg>`,
+    logo: `<img src="./logos/zayn.png" class="w-full h-full object-contain" />`,
   },
   {
     id: 6,
-    artist: "",
+    artist: "Tigres del Norte",
     tour: "Tour 2026",
-    city: "GNP, CDMX",
-    date: "7 de abril 2026",
-    dateObj: new Date(2026, 2, 7),
+    city: "Estadio GNP, CDMX",
+    date: "27 de Junio 2026",
+    dateObj: new Date(2026, 5, 27),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -146,8 +146,28 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 15,
-    logo: `<img src="./images/acdclogo.png" class="w-full h-full object-contain" />`,
+    logo: `<img src="./logos/tigres.png" class="w-full h-full object-contain" />`,
   },
+  {
+    id: 7,
+    artist: " Asian Kung-Fu Generation   ",
+    tour: "Tour 2026",
+    city: "Pepsi Center, CDMX",
+    date: "28 de Junio 2026",
+    dateObj: new Date(2026, 5, 28),
+    price: 629,
+    originalPrice: 653,
+    includes: [
+      "Viaje redondo",
+      "Bebida y Snack",
+      "Coordinador de viaje",
+      "Seguro de viaje",
+      "Gafete Conmemorativo",
+    ],
+    spots: 15,
+    logo: `<img src="./logos/asian.png" class="w-full h-full object-contain" />`,
+  },
+  
 ];
 
 let currentDate = new Date();
@@ -248,7 +268,7 @@ function createDayElement(day, isOtherMonth, events, isToday = false) {
 
       const logoContainer = document.createElement("div");
       logoContainer.className =
-        "w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center event-indicator overflow-hidden";
+        "w-20 h-20 rounded-xl shadow-lg flex items-center justify-center event-indicator overflow-hidden";
       logoContainer.innerHTML = event.logo;
 
       const eventTitle = document.createElement("p");
