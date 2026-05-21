@@ -1,6 +1,6 @@
 const defaultConfig = {
   site_title: "ConcertTrips",
-  hero_title: "Vive la Música Sin Preocupaciones",
+  hero_title: "¡Vive la Música Sin Preocupaciones!",
   hero_subtitle:
     "Paquetes de viaje redondo que incluyen transporte, hospedaje y entradas. Tú solo disfruta del show.",
   cta_button_text: "Ver Viajes Disponibles",
