@@ -442,7 +442,7 @@ const codviajes = [
     city: "Auditorio Nacional, CDMX",
       dates: ["22 de Agosto, 2026",],
     schedules: ["14:00 PM"],
-    image: "./images/anyma.jpg",
+    image: "./images/Anyma.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
@@ -709,7 +709,7 @@ const codviajes = [
     city: "Estadio GNP Seguros, CDMX",
       dates: ["26 de Octubre, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/ironmaiden.jpg",
+    image: "./images/IronMaiden.jpg",
     price: 629,
     originalPrice: 655,
     includes: [

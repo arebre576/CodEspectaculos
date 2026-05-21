@@ -16,7 +16,7 @@ const trips = [
     id: 1,
     artist: "Pulp",
     tour: "Tour 2026",
-    city: "Palacio de los Deportesssss, CDMX",
+    city: "Palacio de los Deportes, CDMX",
       dates: ["2 de Junio, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Pulp.jpg",
@@ -38,7 +38,7 @@ const trips = [
     city: "Auditorio Nacional, CDMX",
       dates: ["19 de Mayo, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/Monstax.jpg",
+    image: "./images/MonstaX.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
@@ -114,7 +114,7 @@ const trips = [
     city: "Teatro Metropolitan, CDMX",
       dates: ["10  de Junio, 2026"],
     schedules: [ "2:00 PM"],
-    image: "./images/BOA.jpg",
+    image: "./images/Boa.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
