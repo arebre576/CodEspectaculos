@@ -39,7 +39,7 @@ const codviajes = [
     city: "Auditorio Nacional, CDMX",
       dates: ["19 de Mayo, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/MonstaX.jpg",
+    image: "./images/Monsta.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
@@ -89,25 +89,7 @@ const codviajes = [
     ],
     spots: 30,
   },
-  {
-    id: 5,
-    artist: "Rawayana",
-    tour: "Tour 2026",
-    city: "Palacio de los Deportes, CDMX",
-      dates: ["7 de Junio, 2026"],
-    schedules: ["2:00 PM"],
-    image: "./images/Rawayana.jpg",
-    price: 629,
-    originalPrice: 655,
-    includes: [
-      "Viaje redondo",
-      "Bebida y Snack",
-      "Coordinador de viaje",
-      "Seguro de viaje",
-      "Gafete Conmemorativo",
-    ],
-    spots: 18,
-  },
+  
    {
     id: 6,
     artist: "BOA",

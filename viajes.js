@@ -76,7 +76,7 @@ const trips = [
     city: "Pálacio de los Deportes, CDMX",
       dates: ["6 de Junio, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/MiloJ.jpg",
+    image: "./images/Monsta.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
@@ -90,12 +90,12 @@ const trips = [
   },
   {
     id: 5,
-    artist: "Rawayana",
+    artist: "Enhypen",
     tour: "Tour 2026",
-    city: "Palacio de los Deportes, CDMX",
-      dates: ["7 de Junio, 2026"],
-    schedules: ["2:00 PM"],
-    image: "./images/Rawayana.jpg",
+    city: "Arena CDMX, CDMX",
+      dates: ["11 de Julio, 2026", "12 de Julio, 2026", "14 de Julio, 2026"],
+    schedules: ["9:30 PM", "1:00 PM"],
+    image: "./images/Enhypen.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
