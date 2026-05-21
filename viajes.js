@@ -16,7 +16,7 @@ const trips = [
     id: 1,
     artist: "Pulp",
     tour: "Tour 2026",
-    city: "Palacio de los Deportes, CDMX",
+    city: "Palacio de los Deportesssss, CDMX",
       dates: ["2 de Junio, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Pulp.jpg",
