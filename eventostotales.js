@@ -39,7 +39,7 @@ const codviajes = [
     city: "Auditorio Nacional, CDMX",
       dates: ["19 de Mayo, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/Monstax.jpg",
+    image: "./images/MonstaX.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
@@ -115,7 +115,7 @@ const codviajes = [
     city: "Teatro Metropolitan, CDMX",
       dates: ["10  de Junio, 2026"],
     schedules: [ "2:00 PM"],
-    image: "./images/BOA.jpg",
+    image: "./images/Boa.jpg",
     price: 629,
     originalPrice: 655,
     includes: [
