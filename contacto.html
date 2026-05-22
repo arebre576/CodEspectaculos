@@ -29,42 +29,79 @@
         class="fixed bottom-20 right-10 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"
       ></div>
       <!-- Navigation -->
-      <nav class="relative z-10 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="w-40 h-40 rounded-xl flex items-center justify-center">
-              <img src="./logo.png" alt="Guitarra" class="w-40 h-40" />
-            </div>
-            <span
-              id="nav-title"
-              class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
-              >COD Espectaculos</span
-            >
-          </div>
-          <div class="hidden md:flex items-center gap-8">
-            <a
-              href="./index.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Destinos</a
-            >
-            <a
-              href="./funcion.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Cómo Funciona</a
-            >
-                 <a
-              href="./calendario.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Calendario</a
-            >
-            <a
-              href="./contacto.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Contacto</a
-            >
-          </div>
-        </div>
-      </nav>
+     <nav class="relative z-10 px-6 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="./logo.png" alt="Logo" class="w-16 h-16 md:w-24 md:h-24 object-contain" />
+
+      <span
+        class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
+      >
+        COD Espectaculos
+      </span>
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="./index.html" class="text-gray-300 hover:text-white transition-colors">
+        Destinos
+      </a>
+
+      <a href="./funcion.html" class="text-gray-300 hover:text-white transition-colors">
+        Cómo Funciona
+      </a>
+
+      <a href="./calendario.html" class="text-gray-300 hover:text-white transition-colors">
+        Calendario
+      </a>
+
+      <a href="./contacto.html" class="text-gray-300 hover:text-white transition-colors">
+        Contacto
+      </a>
+    </div>
+
+    <!-- Botón Mobile -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-white text-3xl"
+    >
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
+  >
+    <a href="./index.html" class="text-gray-300 hover:text-white">
+      Destinos
+    </a>
+
+    <a href="./funcion.html" class="text-gray-300 hover:text-white">
+      Cómo Funciona
+    </a>
+
+    <a href="./calendario.html" class="text-gray-300 hover:text-white">
+      Calendario
+    </a>
+
+    <a href="./contacto.html" class="text-gray-300 hover:text-white">
+      Contacto
+    </a>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 
 
       <!-- Contact / CTA -->
