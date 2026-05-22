@@ -288,7 +288,7 @@ function addToCart(tripId) {
     Selecciona fecha
   </label>
   <select id="fecha" required
-    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+        class="w-full px-4 py-3 bg-gray-900 text-white border border-white/20 rounded-xl">
 
     <option value="">Selecciona fecha</option>
     ${trip.dates
@@ -306,7 +306,7 @@ function addToCart(tripId) {
     Selecciona horario
   </label>
   <select id="horario" required
-    class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl">
+     class="w-full px-4 py-3 bg-gray-900 text-white border border-white/20 rounded-xl">
 
     <option value="">Selecciona horario</option>
     ${trip.schedules
@@ -326,7 +326,7 @@ function addToCart(tripId) {
           <form id="booking-form" class="space-y-6">
             <div>
               <label for="pasajeros" class="block text-sm font-medium text-gray-300 mb-2">¿Cuántos pasajeros son?</label>
-              <select id="pasajeros" required class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl focus:outline-none focus:border-pink-500 transition-colors">
+              <select id="pasajeros" required   class="w-full px-4 py-3 bg-gray-900 text-white border border-white/20 rounded-xl focus:outline-none focus:border-pink-500 transition-colors">
                 <option value="">Selecciona cantidad</option>
                 ${Array.from(
                   { length: trip.spots },
