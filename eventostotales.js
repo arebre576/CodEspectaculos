@@ -40,7 +40,7 @@ const codviajes = [
     city: "Arena CDMX, CDMX",
       dates: [ "15 de Julio, 2026"],
     schedules: ["8:30 AM", "12:00 PM"],
-    image: "./images/EnhypenSantos.jpg",
+    image: "./images/Enhypensantos.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -387,7 +387,7 @@ const codviajes = [
     city: "Arena CDMX, CDMX",
       dates: ["4 de Septiembre, 2026", "25 de Octubre, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/TINI.jpg",
+    image: "./images/Tini.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -406,7 +406,7 @@ const codviajes = [
     city: "Auditorio BB, CDMX",
       dates: ["5 de Septiembre, 2026", "6 de Septiembre, 2026"],
     schedules: ["1:00 PM"],
-    image: "./images/JayPark.jpg",
+    image: "./images/Jaypark.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -541,7 +541,7 @@ const codviajes = [
     city: "Pepsi Center WTC, CDMX",
       dates: [ "15 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
-    image: "./images/Waveto.jpg",
+    image: "./images/waveto.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
