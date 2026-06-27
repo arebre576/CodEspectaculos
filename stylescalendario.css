@@ -38,7 +38,13 @@
     }
 
     .shimmer {
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+     background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
       background-size: 200% 100%;
       animation: shimmer 2s infinite;
     }
+
+    .logoCOD {
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+}

@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link href="./stylescalendario.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
     
 
   <style>@view-transition { navigation: auto; }</style>
@@ -16,44 +16,91 @@
  
  
  
-  <div id="app" class="h-full w-full bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-900 overflow-auto"><!-- Header -->
+  <div id="app" class="gradient-bg"><!-- Header -->
    <header class="bg-black/40 border-b border-purple-500/30 px-6 py-4 backdrop-blur-sm">
-       <nav class="relative z-10 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="w-40 h-40 rounded-xl flex items-center justify-center">
-              <img src="./logo.png" alt="Guitarra" class="w-40 h-40" />
-            </div>
-            <span
-              id="nav-title"
-              class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
-              >COD Espectaculos</span
-            >
-          </div>
-          <div class="hidden md:flex items-center gap-8">
-            <a
-              href="./index.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Destinos</a
-            >
-            <a
-              href="./funcion.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Cómo Funciona</a
-            >
-                        <a
-              href="./calendario.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Calendario</a
-            >
-            <a
-              href="./contacto.html"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Contacto</a
-            >
-          </div>
-        </div>
-      </nav>
+     <!-- para dar efecto de circulos morados en el fondo -->
+      <div
+        class="fixed top-20 left-10 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="fixed bottom-20 right-10 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"
+      ></div>
+
+      <!-- aqui termina la linea de circulitosas -->  
+    <nav class="relative z-10 px-6 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="./logo.png" alt="Logo" class="logoCOD" />
+
+    </div>
+
+    <!-- menu secciones -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="./index.html" class="text-gray-300 hover:text-white transition-colors">
+        COD Viajes
+      </a>
+
+      <a href="./funcion.html" class="text-gray-300 hover:text-white transition-colors">
+        ¿Cómo Funciona?
+      </a>
+
+      <a href="./calendario.html" class="text-gray-300 hover:text-white transition-colors">
+        Calendario
+      </a>
+      <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+      Indispensable
+    </a>
+    
+     <a href="./referencias.html" class="text-gray-300 hover:text-white">
+      Referencias
+    </a>
+
+      <a href="./contacto.html" class="text-gray-300 hover:text-white transition-colors">
+        Contacto
+      </a>
+    </div>
+
+    <!-- Botón Mobile -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-white text-3xl"
+    >
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
+  >
+    <a href="./index.html" class="text-gray-300 hover:text-white">
+      COD Viajes
+    </a>
+
+    <a href="./funcion.html" class="text-gray-300 hover:text-white">
+      ¿Cómo Funciona?
+    </a>
+
+    <a href="./calendario.html" class="text-gray-300 hover:text-white">
+      Calendario
+    </a>
+
+    <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+      Indispensable
+    </a>
+    
+     <a href="./referencias.html" class="text-gray-300 hover:text-white">
+      Referencias
+    </a>
+
+    <a href="./contacto.html" class="text-gray-300 hover:text-white">
+      Contacto
+    </a>
+  </div>
+</nav>
     <div class="max-w-7xl mx-auto flex items-center justify-between">
   
      <div class="flex items-center gap-4"><button id="prev-month" class="p-2 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 text-white transition-all hover:scale-110">
@@ -87,6 +134,9 @@
      <div class="text-center text-purple-300 font-bold py-3 text-sm">
       SÁB
      </div>
+
+
+     
     </div><!-- Calendario GRID -->
     <div id="calendar-grid" class="grid grid-cols-7 gap-2"><!-- Days will be generated here -->
     </div><!-- Legend -->
@@ -98,7 +148,41 @@
       <div class="w-4 h-4 rounded bg-slate-800 border border-slate-600"></div><span>Sin eventos</span>
      </div>
     </div>
+    
    </main><!-- Eventoo Modal -->
+
+
+
+      <footer class="relative z-10 px-6 py-8 border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <div class="flex items-center gap-2">
+            <img src="./logo.png" alt="Guitarra" class="w-29 h-20" />
+            <span class="font-semibold">COD Espectaculos</span>
+          </div>
+          <p class="text-gray-500 text-sm">
+            © 2026 Cod Espectaculos. Todos los derechos reservados.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://www.instagram.com/codespectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >Instagram</a
+            >
+            <a
+              href="https://www.facebook.com/CODespectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >Facebook</a
+            >
+            <a
+              href="https://www.tiktok.com/@cod.espectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >TikTok</a
+            >
+          </div>
+        </div>
+      </footer>
    <div id="event-modal" class="fixed inset-0 bg-black/70 modal-backdrop hidden items-center justify-center z-50 p-4">
     <div class="modal-content bg-gradient-to-br from-slate-900 to-purple-950 rounded-3xl max-w-2xl w-full border border-purple-500/40 shadow-2xl shadow-purple-500/20 overflow-hidden"><!-- Modal Header with Artist Image -->
      <div class="relative">
@@ -110,6 +194,10 @@
        ¡DESCUENTO!
       </div>
      </div><!-- Modal Content -->
+
+
+
+     
      <div class="p-6">
       <div class="mb-4">
        <h2 id="modal-artist" class="text-3xl font-black text-white mb-1"></h2>
@@ -142,7 +230,7 @@
       </div><!-- Includes -->
       <div class="mb-6">
        <h3 class="text-white font-bold text-lg mb-3 flex items-center gap-2">
-        <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg> El paquete incluye:</h3>
        <div id="modal-includes" class="grid grid-cols-2 gap-2"><!-- Includes will be inserted here -->
        </div>
@@ -153,16 +241,19 @@
       </div>
      </div>
     </div>
-   </div><!-- Reservation Form Modal -->
+    
+   </div><!-- aqui se pueden movrs los colores deee lo del forms de pasajeros :D -->
    <div id="reservation-modal" class="fixed inset-0 bg-black/70 modal-backdrop hidden items-center justify-center z-50 p-4">
     <div class="modal-content bg-gradient-to-br from-slate-900 to-purple-950 rounded-3xl max-w-3xl w-full max-h-[90vh] border border-purple-500/40 shadow-2xl shadow-purple-500/20 overflow-hidden flex flex-col"><!-- Form Header -->
-     <div class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-5 flex items-center justify-between flex-shrink-0">
+     <div class="bg-gradient-to-r from-purple-900 to-pink-600 px-6 py-5 flex items-center justify-between flex-shrink-0">
       <div>
        <h3 class="text-2xl font-black text-white">Reservar Viaje</h3>
        <p id="reservation-event-title" class="text-purple-100 text-sm font-medium"></p>
       </div><button id="close-reservation" class="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all">
        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
        </svg></button>
+
+
      </div><!-- Form Content (Scrollable) -->
      <div class="overflow-y-auto flex-1 p-6">
       <form id="reservation-form"><!-- Number of Passengers -->
@@ -179,7 +270,13 @@
     </div>
    </div>
   </div>
-     <script src="./calendario.js"></script>
+    
+
+  <script src="./calendario.js"></script>
 
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bd2d28766ecd2c0',t:'MTc2ODI4NTU4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>
+
+
+
+
+ </html>

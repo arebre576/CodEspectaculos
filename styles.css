@@ -60,3 +60,10 @@ body {
 .stagger-4 {
   animation-delay: 0.4s;
 }
+
+
+.logoCOD {
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+}
