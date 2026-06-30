@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="h-full">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,12 @@
       rel="stylesheet"
     />
     <link href="./styles.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <style>
       @view-transition {
@@ -32,97 +37,109 @@
       ></div>
 
       <!-- aqui termina la linea de circulitosas -->
-      
+
       <!-- barra de navegación -->
-<nav class="relative z-10 px-6 py-4">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <nav class="relative z-10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <img src="./logo.png" alt="Logo" class="logoCOD" />
+          </div>
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <img src="./logo.png" alt="Logo" class="logoCOD" />
+          <!-- menu secciones -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              COD Viajes
+            </a>
 
-    </div>
+            <a
+              href="./funcion.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              ¿Cómo Funciona?
+            </a>
 
-    <!-- menu secciones -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="./index.html" class="text-gray-300 hover:text-white transition-colors">
-        COD Viajes
-      </a>
+            <a
+              href="./calendario.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              Calendario
+            </a>
+            <a
+              href="./indispensable.html"
+              class="text-gray-300 hover:text-white"
+            >
+              Indispensable
+            </a>
 
-      <a href="./funcion.html" class="text-gray-300 hover:text-white transition-colors">
-        ¿Cómo Funciona?
-      </a>
+            <a href="./referencias.html" class="text-gray-300 hover:text-white">
+              Referencias
+            </a>
 
-      <a href="./calendario.html" class="text-gray-300 hover:text-white transition-colors">
-        Calendario
-      </a>
-      <a href="./indispensable.html" class="text-gray-300 hover:text-white">
-      Indispensable
-    </a>
-    
-     <a href="./referencias.html" class="text-gray-300 hover:text-white">
-      Referencias
-    </a>
+            <a
+              href="./contacto.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              Contacto
+            </a>
+          </div>
 
-      <a href="./contacto.html" class="text-gray-300 hover:text-white transition-colors">
-        Contacto
-      </a>
-    </div>
+          <!-- Botón Mobile -->
+          <button id="menu-btn" class="md:hidden text-white text-3xl">
+            ☰
+          </button>
+        </div>
 
-    <!-- Botón Mobile -->
-    <button
-      id="menu-btn"
-      class="md:hidden text-white text-3xl"
-    >
-      ☰
-    </button>
-  </div>
+        <!-- Menu Mobile -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
+        >
+          <a href="./index.html" class="text-gray-300 hover:text-white">
+            COD Viajes
+          </a>
 
-  <!-- Menu Mobile -->
-  <div
-    id="mobile-menu"
-    class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
-  >
-    <a href="./index.html" class="text-gray-300 hover:text-white">
-      COD Viajes
-    </a>
+          <a href="./funcion.html" class="text-gray-300 hover:text-white">
+            ¿Cómo Funciona?
+          </a>
 
-    <a href="./funcion.html" class="text-gray-300 hover:text-white">
-      ¿Cómo Funciona?
-    </a>
+          <a href="./calendario.html" class="text-gray-300 hover:text-white">
+            Calendario
+          </a>
 
-    <a href="./calendario.html" class="text-gray-300 hover:text-white">
-      Calendario
-    </a>
+          <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+            Indispensable
+          </a>
 
-    <a href="./indispensable.html" class="text-gray-300 hover:text-white">
-      Indispensable
-    </a>
-    
-     <a href="./referencias.html" class="text-gray-300 hover:text-white">
-      Referencias
-    </a>
+          <a href="./referencias.html" class="text-gray-300 hover:text-white">
+            Referencias
+          </a>
 
-    <a href="./contacto.html" class="text-gray-300 hover:text-white">
-      Contacto
-    </a>
-  </div>
-</nav>
+          <a href="./contacto.html" class="text-gray-300 hover:text-white">
+            Contacto
+          </a>
+        </div>
+      </nav>
 
-<script>
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
 
       <!-- listas de viajes -->
       <section id="destinos" class="relative z-10 px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4"> Lista de eventos</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Lista de eventos
+            </h2>
             <p class="text-gray-400">Elige tu aventura musical favorita</p>
           </div>
           <div
@@ -174,8 +191,9 @@
           class="absolute inset-0 bg-black/70 backdrop-blur-sm"
           onclick="closeModal()"
         ></div>
+        <!-- AQUI SE CAMBIA EL COLOR DEL MODAAAAL -->
         <div
-          class="relative bg-gradient-to-br from-gray-900 to-purple-900/50 rounded-3xl p-6 md:p-8 max-w-2xl w-full border border-white/20 max-h-[90%] overflow-auto"
+          class="relative bg-gradient-to-br from-black/90 to-black/90 rounded-3xl p-6 md:p-8 max-w-2xl w-full border border-white/20 max-h-[90%] overflow-auto"
         >
           <button
             onclick="closeModal()"

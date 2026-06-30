@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="h-full">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,12 @@
       rel="stylesheet"
     />
     <link href="./styles.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <style>
       @view-transition {
@@ -32,91 +37,101 @@
       ></div>
 
       <!-- aqui termina la linea de circulitosas -->
-      
+
       <!-- barra de navegación -->
-<nav class="relative z-10 px-6 py-4">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <nav class="relative z-10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <img src="./logo.png" alt="Logo" class="logoCOD" />
+          </div>
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <img src="./logo.png" alt="Logo" class="logoCOD" />
+          <!-- menu secciones -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              COD Viajes
+            </a>
 
-    </div>
+            <a
+              href="./funcion.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              ¿Cómo Funciona?
+            </a>
 
-    <!-- menu secciones -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="./index.html" class="text-gray-300 hover:text-white transition-colors">
-        COD Viajes
-      </a>
+            <a
+              href="./calendario.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              Calendario
+            </a>
+            <a
+              href="./indispensable.html"
+              class="text-gray-300 hover:text-white"
+            >
+              Indispensable
+            </a>
 
-      <a href="./funcion.html" class="text-gray-300 hover:text-white transition-colors">
-        ¿Cómo Funciona?
-      </a>
+            <a href="./referencias.html" class="text-gray-300 hover:text-white">
+              Referencias
+            </a>
 
-      <a href="./calendario.html" class="text-gray-300 hover:text-white transition-colors">
-        Calendario
-      </a>
-      <a href="./indispensable.html" class="text-gray-300 hover:text-white">
-      Indispensable
-    </a>
-    
-     <a href="./referencias.html" class="text-gray-300 hover:text-white">
-      Referencias
-    </a>
+            <a
+              href="./contacto.html"
+              class="text-gray-300 hover:text-white transition-colors"
+            >
+              Contacto
+            </a>
+          </div>
 
-      <a href="./contacto.html" class="text-gray-300 hover:text-white transition-colors">
-        Contacto
-      </a>
-    </div>
+          <!-- Botón Mobile -->
+          <button id="menu-btn" class="md:hidden text-white text-3xl">
+            ☰
+          </button>
+        </div>
 
-    <!-- Botón Mobile -->
-    <button
-      id="menu-btn"
-      class="md:hidden text-white text-3xl"
-    >
-      ☰
-    </button>
-  </div>
+        <!-- Menu Mobile -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
+        >
+          <a href="./index.html" class="text-gray-300 hover:text-white">
+            COD Viajes
+          </a>
 
-  <!-- Menu Mobile -->
-  <div
-    id="mobile-menu"
-    class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
-  >
-    <a href="./index.html" class="text-gray-300 hover:text-white">
-      COD Viajes
-    </a>
+          <a href="./funcion.html" class="text-gray-300 hover:text-white">
+            ¿Cómo Funciona?
+          </a>
 
-    <a href="./funcion.html" class="text-gray-300 hover:text-white">
-      ¿Cómo Funciona?
-    </a>
+          <a href="./calendario.html" class="text-gray-300 hover:text-white">
+            Calendario
+          </a>
 
-    <a href="./calendario.html" class="text-gray-300 hover:text-white">
-      Calendario
-    </a>
+          <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+            Indispensable
+          </a>
 
-    <a href="./indispensable.html" class="text-gray-300 hover:text-white">
-      Indispensable
-    </a>
-    
-     <a href="./referencias.html" class="text-gray-300 hover:text-white">
-      Referencias
-    </a>
+          <a href="./referencias.html" class="text-gray-300 hover:text-white">
+            Referencias
+          </a>
 
-    <a href="./contacto.html" class="text-gray-300 hover:text-white">
-      Contacto
-    </a>
-  </div>
-</nav>
+          <a href="./contacto.html" class="text-gray-300 hover:text-white">
+            Contacto
+          </a>
+        </div>
+      </nav>
 
-<script>
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
       <!-- Hero Section -->
       <header class="relative z-10 px-6 py-16 md:py-24">
         <div class="max-w-7xl mx-auto text-center">
@@ -153,62 +168,74 @@
               Ver Viajes Próximos
             </button>
             <a
-  href="./masviajes.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="inline-block px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all"
->
-  Más Viajes
-</a>
+              href="./masviajes.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all"
+            >
+              Más Viajes
+            </a>
           </div>
         </div>
       </header>
 
+      <div
+        id="carouselExampleControls"
+        class="carousel slide mx-auto"
+        data-ride="carousel"
+        style="width: 50%"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 carrusel-img"
+              src="./recursos/Carrusel1.jpeg"
+              alt="First slide"
+            />
+          </div>
 
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 carrusel-img"
+              src="./recursos/Carrusel2.jpeg"
+              alt="Second slide"
+            />
+          </div>
 
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 carrusel-img"
+              src="./recursos/Carrusel3.jpeg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
 
-   <div id="carouselExampleControls" 
-     class="carousel slide mx-auto" 
-     data-ride="carousel" 
-     style="width: 50%;">
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
 
-  <div class="carousel-inner">
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
 
-    <div class="carousel-item active">
-      <img class="d-block w-100 carrusel-img"
-           src="./recursos/Carrusel1.jpeg"
-           alt="First slide">
-    </div>
-
-    <div class="carousel-item">
-      <img class="d-block w-100 carrusel-img"
-           src="./recursos/Carrusel2.jpeg"
-           alt="Second slide">
-    </div>
-
-    <div class="carousel-item">
-      <img class="d-block w-100 carrusel-img"
-           src="./recursos/Carrusel3.jpeg"
-           alt="Third slide">
-    </div>
-
-  </div>
-
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-
-<style>
-.carrusel-img{
-    height: 450px;      /* altura fija */
-    object-fit: cover;  /* ajusta la imagen sin deformarla */
-}
-</style>
+      <style>
+        .carrusel-img {
+          height: 450px; /* altura fija */
+          object-fit: cover; /* ajusta la imagen sin deformarla */
+        }
+      </style>
 
       <!-- cod viajes encabezado -->
       <section id="destinos" class="relative z-10 px-6 py-16">
@@ -267,7 +294,7 @@
           onclick="closeModal()"
         ></div>
         <div
-          class="relative bg-gradient-to-br from-gray-900 to-purple-900/50 rounded-3xl p-6 md:p-8 max-w-2xl w-full border border-white/20 max-h-[90%] overflow-auto"
+          class="relative bg-gradient-to-br from-gray-900 to-black-900/50 rounded-3xl p-6 md:p-8 max-w-2xl w-full border border-white/20 max-h-[90%] overflow-auto"
         >
           <button
             onclick="closeModal()"
@@ -280,9 +307,21 @@
       </div>
     </div>
     <script src="./viajes.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script>
       (function () {
         function c() {

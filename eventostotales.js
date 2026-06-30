@@ -12,14 +12,12 @@ const defaultConfig = {
 };
 
 const codviajes = [
-   
-   
-   {
+  {
     id: 1,
     artist: "Enhypen",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["11 de Julio, 2026", "12 de Julio, 2026", "14 de Julio, 2026"],
+    dates: ["11 de Julio, 2026", "12 de Julio, 2026", "14 de Julio, 2026"],
     schedules: ["8:30 AM", "1:00 PM"],
     image: "./images/Enhypen.jpg",
     price: 665,
@@ -33,12 +31,12 @@ const codviajes = [
     ],
     spots: 48,
   },
- {
+  {
     id: 2,
     artist: "Enhypen y Santos Bravos",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: [ "15 de Julio, 2026"],
+    dates: ["15 de Julio, 2026"],
     schedules: ["8:30 AM", "12:00 PM"],
     image: "./images/Enhypensantos.jpg",
     price: 665,
@@ -53,12 +51,12 @@ const codviajes = [
     spots: 48,
   },
 
-   {
+  {
     id: 3,
     artist: "Woodz",
     tour: "Tour 2026",
     city: "La Maraka, CDMX",
-      dates: ["21 de Julio, 2026"],
+    dates: ["21 de Julio, 2026"],
     schedules: ["11:30 AM"],
     image: "./images/Woodz.jpg",
     price: 665,
@@ -72,12 +70,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-{
+  {
     id: 4,
     artist: "Sombr",
     tour: "Tour 2026",
     city: "Pepsi Center WTC, CDMX",
-      dates: ["22 de Julio, 2026"],
+    dates: ["22 de Julio, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Sombr.jpg",
     price: 665,
@@ -92,12 +90,19 @@ const codviajes = [
     spots: 20,
   },
 
-   {
+  {
     id: 5,
     artist: "Harry Styles",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["31 de Julio, 2026", "1 de Agosto, 2026", "4 de Agosto, 2026", "7 de Agosto, 2026", "8 de Agosto, 2026", "10 de Agosto, 2026",],
+    dates: [
+      "31 de Julio, 2026",
+      "1 de Agosto, 2026",
+      "4 de Agosto, 2026",
+      "7 de Agosto, 2026",
+      "8 de Agosto, 2026",
+      "10 de Agosto, 2026",
+    ],
     schedules: ["9:30 AM", "11:30 AM", "2:00 PM"],
     image: "./images/Harry.jpg",
     price: 665,
@@ -116,7 +121,7 @@ const codviajes = [
     artist: "Laura y Brenda",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: [ "2 de Agosto, 2026",],
+    dates: ["2 de Agosto, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/LauraBrenda.jpg",
     price: 665,
@@ -135,7 +140,7 @@ const codviajes = [
     artist: "DPR",
     tour: "Cream & DPR Artic",
     city: "Pepsi Center WTC, CDMX",
-      dates: [ "7 de Agosto, 2026"],
+    dates: ["7 de Agosto, 2026"],
     schedules: ["9:30 AM", "13:00 PM"],
     image: "./images/Dpr.jpg",
     price: 665,
@@ -149,12 +154,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 8,
     artist: "Melanie Martinez",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: [ "8 de Agosto, 2026"],
+    dates: ["8 de Agosto, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Melanie.jpg",
     price: 665,
@@ -168,15 +173,19 @@ const codviajes = [
     ],
     spots: 20,
   },
-   
-  
+
   {
     id: 9,
     artist: "Sam Smith",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: [ "17 de Agosto, 2026","18 de Agosto, 2026", "20 de Agosto, 2026", "21 de Agosto, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: [
+      "17 de Agosto, 2026",
+      "18 de Agosto, 2026",
+      "20 de Agosto, 2026",
+      "21 de Agosto, 2026",
+    ],
+    schedules: ["2:00 PM"],
     image: "./images/Sam.jpg",
     price: 665,
     originalPrice: 699,
@@ -194,7 +203,7 @@ const codviajes = [
     artist: "Anyma",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: ["22 de Agosto, 2026",],
+    dates: ["22 de Agosto, 2026"],
     schedules: ["14:00 PM"],
     image: "./images/Anyma.jpg",
     price: 665,
@@ -209,12 +218,12 @@ const codviajes = [
     spots: 20,
   },
 
-   {
+  {
     id: 11,
     artist: "Lacrimosa",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["22 de Agosto, 2026", "22 de Agosto, 2026"],
+    dates: ["22 de Agosto, 2026", "22 de Agosto, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Lacrimosa.jpg",
     price: 665,
@@ -228,12 +237,17 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 12,
     artist: "Rosalia",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["24 de Agosto, 2026", "26 de Agosto, 2026", "28 de Agosto, 2026", "29 de Agosto, 2026"],
+    dates: [
+      "24 de Agosto, 2026",
+      "26 de Agosto, 2026",
+      "28 de Agosto, 2026",
+      "29 de Agosto, 2026",
+    ],
     schedules: ["2:00 PM"],
     image: "./images/Rosalia.jpg",
     price: 665,
@@ -247,12 +261,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-     {
+  {
     id: 13,
     artist: "Win Metawin",
     tour: "Just You and Win Metawin Tour 2026",
     city: "Teatro Metropolitan, CDMX",
-      dates: [ "25 de Agosto, 2026"],
+    dates: ["25 de Agosto, 2026"],
     schedules: ["11:30 PM"],
     image: "./images/Win.jpg",
     price: 665,
@@ -266,13 +280,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-     {
+  {
     id: 14,
     artist: "Ikon",
     tour: "Tour 2026",
     city: "La Maraka, CDMX",
-      dates: [ "27 de Agosto, 2026"],
-    schedules: ["9:30 AM","1:00 PM"],
+    dates: ["27 de Agosto, 2026"],
+    schedules: ["9:30 AM", "1:00 PM"],
     image: "./images/Ikon.jpg",
     price: 665,
     originalPrice: 699,
@@ -285,12 +299,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-     {
+  {
     id: 15,
     artist: "Helloween",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["29 de Agosto, 2026"],
+    dates: ["29 de Agosto, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Helloweeen.jpg",
     price: 665,
@@ -304,12 +318,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-     {
+  {
     id: 16,
     artist: "Enjambre",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["29 de Agosto, 2026", "30 de Agosto, 2026"],
+    dates: ["29 de Agosto, 2026", "30 de Agosto, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Enjambre.jpg",
     price: 665,
@@ -328,7 +342,7 @@ const codviajes = [
     artist: "MGK",
     tour: "Tour 2026",
     city: "Estadio Fray Nano, CDMX",
-      dates: ["3 de Septiembre, 2026"],
+    dates: ["3 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/MGK.jpg",
     price: 665,
@@ -347,7 +361,7 @@ const codviajes = [
     artist: "Yuridia",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["3 de Septiembre, 2026", "4 de Septiembre, 2026"],
+    dates: ["3 de Septiembre, 2026", "4 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Yuridia.jpg",
     price: 665,
@@ -361,12 +375,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 19,
     artist: "Siddhartha",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["4 de Septiembre, 2026"],
+    dates: ["4 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Siddhartha.jpg",
     price: 665,
@@ -380,12 +394,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 20,
     artist: "TINI",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["4 de Septiembre, 2026", "25 de Octubre, 2026"],
+    dates: ["4 de Septiembre, 2026", "25 de Octubre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Tini.jpg",
     price: 665,
@@ -399,12 +413,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 21,
     artist: "Jay Park",
     tour: "Tour 2026",
     city: "Auditorio BB, CDMX",
-      dates: ["5 de Septiembre, 2026", "6 de Septiembre, 2026"],
+    dates: ["5 de Septiembre, 2026", "6 de Septiembre, 2026"],
     schedules: ["1:00 PM"],
     image: "./images/Jaypark.jpg",
     price: 665,
@@ -418,12 +432,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 22,
     artist: "5 seconds of summer",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["9 de Septiembre, 2026"],
+    dates: ["9 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/5sos.jpg",
     price: 665,
@@ -437,12 +451,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 23,
     artist: "Scorpions",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["10 de Septiembre, 2026"],
+    dates: ["10 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Scorpions.jpg",
     price: 665,
@@ -456,14 +470,13 @@ const codviajes = [
     ],
     spots: 20,
   },
- 
- 
+
   {
     id: 24,
     artist: "Tan Bionica",
     tour: "Tour 2026",
     city: "Teatro Metropolitan, CDMX",
-      dates: ["10  de Septiembre, 2026"],
+    dates: ["10  de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Bionica.jpg",
     price: 665,
@@ -477,12 +490,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 25,
     artist: "AESPA",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["10  de Septiembre, 2026"],
+    dates: ["10  de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/AESPA.jpg",
     price: 665,
@@ -501,7 +514,7 @@ const codviajes = [
     artist: "Laufey",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["12  de Septiembre, 2026"],
+    dates: ["12  de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Laufey.jpg",
     price: 665,
@@ -515,12 +528,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 27,
     artist: "Vans Warpd Tour",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["12  de Septiembre, 2026", "13 de Septiembre, 2026"],
+    dates: ["12  de Septiembre, 2026", "13 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Vans.jpg",
     price: 665,
@@ -534,12 +547,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 28,
     artist: "Wave To Earth",
     tour: "Tour 2026",
     city: "Pepsi Center WTC, CDMX",
-      dates: [ "15 de Septiembre, 2026"],
+    dates: ["15 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/waveto.jpg",
     price: 665,
@@ -553,12 +566,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 29,
     artist: "Khalid",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: [ "17 de Septiembre, 2026"],
+    dates: ["17 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Khalid.jpg",
     price: 665,
@@ -577,7 +590,7 @@ const codviajes = [
     artist: "Reyno",
     tour: "Tour 2026",
     city: "Pepsi Center WTC, CDMX",
-      dates: [ "17 de Septiembre, 2026"],
+    dates: ["17 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Reyno.jpg",
     price: 665,
@@ -592,12 +605,12 @@ const codviajes = [
     spots: 20,
   },
 
-   {
+  {
     id: 31,
     artist: "Robyn Sexitential Tour",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["19 de Septiembre, 2026"],
+    dates: ["19 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Robyn.jpg",
     price: 665,
@@ -616,7 +629,7 @@ const codviajes = [
     artist: "Young Miko",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["22 de Septiembre, 2026"],
+    dates: ["22 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Young.jpg",
     price: 665,
@@ -630,13 +643,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-  
-   {
+
+  {
     id: 32,
     artist: "Stray Kids",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["25 de Septiembre, 2026", "26 de Septiembre, 2026"],
+    dates: ["25 de Septiembre, 2026", "26 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Straykids.jpg",
     price: 665,
@@ -650,12 +663,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 33,
     artist: "The Neighbourhood",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["26 de Septiembre, 2026"],
+    dates: ["26 de Septiembre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/TheNeigh.jpg",
     price: 665,
@@ -674,7 +687,7 @@ const codviajes = [
     artist: "Iron Maiden",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["26 de Octubre, 2026"],
+    dates: ["26 de Octubre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/IronMaiden.jpg",
     price: 665,
@@ -693,8 +706,8 @@ const codviajes = [
     artist: "Robbie Williams",
     tour: "Tour 2026",
     city: "Palacio de Los Deportes, CDMX",
-      dates: ["7 de Octubre, 2026", "8 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["7 de Octubre, 2026", "8 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Robbie.jpg",
     price: 665,
     originalPrice: 699,
@@ -712,8 +725,8 @@ const codviajes = [
     artist: "Two Door Cinema Club",
     tour: "Tour 2026",
     city: "Pepsi Center, CDMX",
-      dates: ["15 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["15 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/TwoDoor.jpg",
     price: 665,
     originalPrice: 699,
@@ -731,8 +744,8 @@ const codviajes = [
     artist: "Martin Garrix",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["16 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["16 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Garrix.jpg",
     price: 665,
     originalPrice: 699,
@@ -745,12 +758,12 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 38,
     artist: "Slayer",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: [ "21 de Octubre, 2026"],
+    dates: ["21 de Octubre, 2026"],
     schedules: ["2:00 PM"],
     image: "./images/Slayer.jpg",
     price: 665,
@@ -769,8 +782,8 @@ const codviajes = [
     artist: "Bad Gay",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["22 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["22 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Badgay.jpg",
     price: 665,
     originalPrice: 699,
@@ -788,8 +801,8 @@ const codviajes = [
     artist: "Jessie Ware",
     tour: "Tour 2026",
     city: "Teatro Metropolitan, CDMX",
-      dates: ["24 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["24 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Jessie.jpg",
     price: 665,
     originalPrice: 699,
@@ -807,8 +820,8 @@ const codviajes = [
     artist: "Fobia",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["24 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["24 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Fobia.jpg",
     price: 665,
     originalPrice: 699,
@@ -826,8 +839,8 @@ const codviajes = [
     artist: "Romeo Santos y Prince Royce",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["25 de Octubre, 2026", "26 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["25 de Octubre, 2026", "26 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Romeo.jpg",
     price: 665,
     originalPrice: 699,
@@ -840,13 +853,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-   {
+  {
     id: 43,
     artist: "Jimmy Sea",
     tour: "Tour 2026",
     city: "Teatro Metropolitan, CDMX",
-      dates: ["28 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["28 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Jimmy.jpg",
     price: 665,
     originalPrice: 699,
@@ -864,8 +877,8 @@ const codviajes = [
     artist: "Sofi Tukker",
     tour: "Tour 2026",
     city: "Pepsi Center, CDMX",
-      dates: ["31 de Octubre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["31 de Octubre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Sofitukker.jpg",
     price: 665,
     originalPrice: 699,
@@ -883,8 +896,8 @@ const codviajes = [
     artist: "Akira Yamaoka",
     tour: "Tour 2026",
     city: "Teatro Metropolitan, CDMX",
-      dates: ["01 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["01 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Akira.jpg",
     price: 665,
     originalPrice: 699,
@@ -902,8 +915,15 @@ const codviajes = [
     artist: "MORAT",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["6 de Noviembre, 2026", "7 de Noviembre, 2026", "8 de Noviembre, 2026", "12 de Noviembre, 2026", "13 de Noviembre, 2026", "14 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: [
+      "6 de Noviembre, 2026",
+      "7 de Noviembre, 2026",
+      "8 de Noviembre, 2026",
+      "12 de Noviembre, 2026",
+      "13 de Noviembre, 2026",
+      "14 de Noviembre, 2026",
+    ],
+    schedules: ["2:00 PM"],
     image: "./images/Morat.jpg",
     price: 665,
     originalPrice: 699,
@@ -921,8 +941,12 @@ const codviajes = [
     artist: "Karol G",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["13 de Noviembre, 2026", "14 de Noviembre, 2026", "15 de Noviembre, 2026"],
-    schedules: [ "10:30 AM", "1:30 PM"],
+    dates: [
+      "13 de Noviembre, 2026",
+      "14 de Noviembre, 2026",
+      "15 de Noviembre, 2026",
+    ],
+    schedules: ["10:30 AM", "1:30 PM"],
     image: "./images/KarolG.jpg",
     price: 665,
     originalPrice: 699,
@@ -940,8 +964,8 @@ const codviajes = [
     artist: "Eros Ramazzotti",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["14 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["14 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Eros.jpg",
     price: 665,
     originalPrice: 699,
@@ -959,8 +983,12 @@ const codviajes = [
     artist: "Corona Capital",
     tour: "Tour 2026",
     city: "Autodromo Hermano Rodriguez, CDMX",
-      dates: ["20 de Noviembre, 2026", "21 de Noviembre, 2026", "22 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: [
+      "20 de Noviembre, 2026",
+      "21 de Noviembre, 2026",
+      "22 de Noviembre, 2026",
+    ],
+    schedules: ["2:00 PM"],
     image: "./images/Corona.jpg",
     price: 665,
     originalPrice: 699,
@@ -978,8 +1006,8 @@ const codviajes = [
     artist: "LP",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: ["22 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["22 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/LP.jpg",
     price: 665,
     originalPrice: 699,
@@ -997,8 +1025,8 @@ const codviajes = [
     artist: "XG",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["22 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["22 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/XG.jpg",
     price: 665,
     originalPrice: 699,
@@ -1016,8 +1044,8 @@ const codviajes = [
     artist: "Love Of Lesbian",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: ["25 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["25 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/LoveOfLesbian.jpg",
     price: 665,
     originalPrice: 699,
@@ -1035,8 +1063,8 @@ const codviajes = [
     artist: "Boynextdoor",
     tour: "Tour 2026",
     city: "ARENA CDMX, CDMX",
-      dates: ["25 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["25 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Boynext.jpg",
     price: 665,
     originalPrice: 699,
@@ -1054,8 +1082,8 @@ const codviajes = [
     artist: "Babasonicos",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["25 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["25 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Babasonicos.jpg",
     price: 665,
     originalPrice: 699,
@@ -1073,8 +1101,8 @@ const codviajes = [
     artist: "Hayley Williams",
     tour: "Tour 2026",
     city: "Auditorio Nacional, CDMX",
-      dates: ["26 de Noviembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["26 de Noviembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Hayley.jpg",
     price: 665,
     originalPrice: 699,
@@ -1092,8 +1120,8 @@ const codviajes = [
     artist: "Katseye",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["27 de Noviembre, 2026"],
-    schedules: [ "9:30 AM", "1:00 PM"],
+    dates: ["27 de Noviembre, 2026"],
+    schedules: ["9:30 AM", "1:00 PM"],
     image: "./images/Katseye.jpg",
     price: 665,
     originalPrice: 699,
@@ -1111,8 +1139,8 @@ const codviajes = [
     artist: "Coca Cola Flow Fest",
     tour: "Tour 2026",
     city: "Autodromo Hermano Rodriguez, CDMX",
-      dates: ["28 de Noviembre, 2026", "29 de Noviembre, 2026"],
-    schedules: [ "10:00 AM"],
+    dates: ["28 de Noviembre, 2026", "29 de Noviembre, 2026"],
+    schedules: ["10:00 AM"],
     image: "./images/Coca.jpg",
     price: 665,
     originalPrice: 699,
@@ -1125,13 +1153,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 57,
     artist: "Knotfest",
     tour: "Tour 2026",
     city: "Estadio Fray Nano, CDMX",
-      dates: ["5 de Diciembre, 2026"],
-    schedules: [ "10:00 AM"],
+    dates: ["5 de Diciembre, 2026"],
+    schedules: ["10:00 AM"],
     image: "./images/Knotfest.jpg",
     price: 665,
     originalPrice: 699,
@@ -1144,13 +1172,18 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 58,
     artist: "Bruno Mars",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["3 de Diciembre, 2026", "4 de Diciembre, 2026", "7 de Diciembre, 2026","8 de Diciembre, 2026"],
-    schedules: [ "11:30 AM", "1:30 PM"],
+    dates: [
+      "3 de Diciembre, 2026",
+      "4 de Diciembre, 2026",
+      "7 de Diciembre, 2026",
+      "8 de Diciembre, 2026",
+    ],
+    schedules: ["11:30 AM", "1:30 PM"],
     image: "./images/Bruno.jpg",
     price: 665,
     originalPrice: 699,
@@ -1163,13 +1196,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 59,
     artist: "Atarashii Gakko!        ",
     tour: "Tour 2026",
     city: "Velodromo Olimpico, CDMX",
-      dates: ["8 de Diciembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["8 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Atara.jpg",
     price: 665,
     originalPrice: 699,
@@ -1182,13 +1215,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 60,
     artist: "Ed Sheeran",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["11 de Diciembre, 2026", "12 de Diciembre, 2026"],
-    schedules: [ "9:30 AM", "1:00 PM"],
+    dates: ["11 de Diciembre, 2026", "12 de Diciembre, 2026"],
+    schedules: ["9:30 AM", "1:00 PM"],
     image: "./images/Ed.jpg",
     price: 665,
     originalPrice: 699,
@@ -1201,13 +1234,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 61,
     artist: "BabyMetal",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["12 de Diciembre, 2026"],
-    schedules: [  "2:00 PM"],
+    dates: ["12 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/BabyMetal.jpg",
     price: 665,
     originalPrice: 699,
@@ -1220,13 +1253,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 62,
     artist: "Disney Worlds Collide Tour",
     tour: "Tour 2026",
     city: "Arena CDMX, CDMX",
-      dates: ["13 de Diciembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["13 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Disney.jpg",
     price: 665,
     originalPrice: 699,
@@ -1239,13 +1272,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 63,
     artist: "Mana",
     tour: "Tour 2026",
     city: "Estadio GNP, CDMX",
-      dates: ["16 de Diciembre, 2026", "17 de Diciembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["16 de Diciembre, 2026", "17 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Mana.jpg",
     price: 665,
     originalPrice: 699,
@@ -1258,13 +1291,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 64,
     artist: "Deep Purple",
     tour: "Tour 2026",
     city: "Estadio Fray Nano, CDMX",
-      dates: ["19 de Diciembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["19 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Deep.jpg",
     price: 665,
     originalPrice: 699,
@@ -1277,13 +1310,13 @@ const codviajes = [
     ],
     spots: 20,
   },
-    {
+  {
     id: 65,
     artist: "Ricardo Arjona",
     tour: "Tour 2026",
     city: "Estadio Banorte, CDMX",
-      dates: ["20 de Diciembre, 2026"],
-    schedules: [ "2:00 PM"],
+    dates: ["20 de Diciembre, 2026"],
+    schedules: ["2:00 PM"],
     image: "./images/Arjona.jpg",
     price: 665,
     originalPrice: 699,
@@ -1301,8 +1334,8 @@ const codviajes = [
     artist: "Hillary Duff",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: ["13 de Febrero, 2026", "14 de Febrero, 2027"],
-    schedules: [ "2:00 PM"],
+    dates: ["13 de Febrero, 2026", "14 de Febrero, 2027"],
+    schedules: ["2:00 PM"],
     image: "./images/Hillary.jpg",
     price: 665,
     originalPrice: 699,
@@ -1320,8 +1353,8 @@ const codviajes = [
     artist: "Jungle",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-      dates: [ "19 de Marzo, 2027"],
-    schedules: [ "2:00 PM"],
+    dates: ["19 de Marzo, 2027"],
+    schedules: ["2:00 PM"],
     image: "./images/Jungle.jpg",
     price: 665,
     originalPrice: 699,
@@ -1339,8 +1372,8 @@ const codviajes = [
     artist: "Louis Tomlinson",
     tour: "Tour 2026",
     city: "Estadio GNP Seguros, CDMX",
-      dates: ["10 de Abril, 2026"],
-    schedules: [ "11:30 AM","2:00 PM"],
+    dates: ["10 de Abril, 2026"],
+    schedules: ["11:30 AM", "2:00 PM"],
     image: "./images/Louis.jpg",
     price: 665,
     originalPrice: 699,
@@ -1353,7 +1386,6 @@ const codviajes = [
     ],
     spots: 20,
   },
-   
 ];
 
 let cart = [];
@@ -1376,22 +1408,16 @@ ${
        />`
     : `<span class="text-7xl float-animation">${codviaje.image}</span>`
 }          <div class="absolute top-12 right-3 px-3 py-1 rounded-full text-xs font-semibold ${
-  codviaje.spots < 7
-    ? "bg-red-500"
-    : "bg-green-500"
-}">
-  ${
-    codviaje.spots < 7
-      ? "🔥 Poca disponibilidad"
-      : "✅ Alta disponibilidad"
-  }
+        codviaje.spots < 7 ? "bg-red-500" : "bg-green-500"
+      }">
+  ${codviaje.spots < 7 ? "🔥 Poca disponibilidad" : "✅ Alta disponibilidad"}
 </div>
             ${
               codviaje.originalPrice > codviaje.price
                 ? `
               <div class="absolute top-3 left-3 px-3 py-1 bg-green-500 rounded-full text-xs font-semibold">
                 -${Math.round(
-                  (1 - codviaje.price / codviaje.originalPrice) * 100
+                  (1 - codviaje.price / codviaje.originalPrice) * 100,
                 )}%
               </div>
             `
@@ -1431,7 +1457,7 @@ ${
             </div>
           </div>
         </div>
-      `
+      `,
     )
     .join("");
 }
@@ -1481,7 +1507,7 @@ ${
                 <span class="text-green-400">✓</span>
                 ${item}
               </li>
-            `
+            `,
               )
               .join("")}
           </ul>
@@ -1535,7 +1561,7 @@ function addToCart(codviajeId) {
       .map(
         (d) => `
       <option value="${d}">${d}</option>
-    `
+    `,
       )
       .join("")}
   </select>
@@ -1553,7 +1579,7 @@ function addToCart(codviajeId) {
       .map(
         (h) => `
       <option value="${h}">${h}</option>
-    `
+    `,
       )
       .join("")}
   </select>
@@ -1573,7 +1599,7 @@ function addToCart(codviajeId) {
                   (_, i) =>
                     `<option value="${i + 1}">${i + 1} ${
                       i === 0 ? "persona" : "personas"
-                    }</option>`
+                    }</option>`,
                 ).join("")}
               </select>
               <p class="text-xs text-gray-500 mt-1">Máximo ${
@@ -1588,11 +1614,11 @@ function addToCart(codviajeId) {
             <div id="summary-container" class="hidden bg-pink-500/10 border border-pink-500/30 rounded-xl p-4">
               <p class="text-sm text-gray-300"><strong>Resumen:</strong></p>
               <p class="text-sm text-gray-400">${codviaje.artist} - ${
-    codviaje.tour
-  }</p>
+                codviaje.tour
+              }</p>
               <p class="text-sm text-gray-400">${codviaje.city} • ${
-    codviaje.dates
-  }</p>
+                codviaje.dates
+              }</p>
 <p class="text-sm text-gray-400">
   📅 <span id="resumen-fecha">Selecciona fecha</span>
 </p>
@@ -1662,13 +1688,12 @@ function renderPassengerForms(count, codviaje) {
 
   container.innerHTML = formsHTML;
 
-  // 
+  //
   summaryContainer.classList.remove("hidden");
   const totalPrice = codviaje.price * count;
   const depositPrice = Math.round(totalPrice * 0.3);
-  document.getElementById(
-    "total-price"
-  ).textContent = `Total: $${totalPrice.toLocaleString()} MXN`;
+  document.getElementById("total-price").textContent =
+    `Total: $${totalPrice.toLocaleString()} MXN`;
 
   // Enable submit button
   submitBtn.disabled = false;
@@ -1712,11 +1737,11 @@ function sendWhatsApp(codviajeId) {
 
 ¡Quiero confirmar mi reserva!`;
 
-  // aqui debe ir el númro a mandar, perooo sin el + pq marca eror 
+  // aqui debe ir el númro a mandar, perooo sin el + pq marca eror
   const numeroWhatsApp = "522225485659"; // Ejemplo: 52 (México) + 2381136476
 
   const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
-    mensaje
+    mensaje,
   )}`;
 
   // Abrir WhatsApp en nueva pestaña
@@ -1733,8 +1758,8 @@ function sendWhatsApp(codviajeId) {
           <p class="text-gray-400 mb-6">Se abrirá WhatsApp con tu solicitud de reserva para <strong>${
             codviaje.artist
           }</strong> con ${pasajeros} ${
-    pasajeros === 1 ? "pasajero" : "pasajeros"
-  }.</p>
+            pasajeros === 1 ? "pasajero" : "pasajeros"
+          }.</p>
           
           <p class="text-sm text-gray-400 mb-6">
             Si no se abrió automáticamente, haz clic en el botón de abajo.
@@ -1774,7 +1799,7 @@ const elementConfig = {
       const midPoint = Math.ceil(words.length / 2);
       const firstHalf = words.slice(0, midPoint).join(" ");
       const secondHalf = words.slice(midPoint).join(" ");
-      heroTitle.innerHTML = `${firstHalf}<br><span class="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">${secondHalf}</span>`;
+      heroTitle.innerHTML = `${firstHalf}<br><span class="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">${secondHalf}</span>`;
     }
 
     if (heroSubtitle)
