@@ -15,13 +15,12 @@ const defaultConfig = {
 const concertEvents = [
   {
     id: 1,
-    artist: "Pulp",
+    artist: "Enhypen",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-    date: "2 de Junio 2026",
-    dates: [ "2 de Junio 2026"],
-    schedules: [ "2:00 PM"],
-    dateObj: new Date(2026, 5, 2),
+    date: "11 de Julio 2026",
+    schedules: [ "2:00 PM", "2:00 PM"],
+    dateObj: new Date(2026, 7, 11),
     price: 629,
     originalPrice: 653,
     includes: [
@@ -175,6 +174,7 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 const monthNames = [
+  "-",
   "Enero",
   "Febrero",
   "Marzo",
