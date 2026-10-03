@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COD Espectaculos - Viajes a Conciertos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  </head>
+
+  <body class="h-full gradient-bg text-white overflow-auto">
+    <div class="min-h-full w-full">
+      <!-- para dar efecto de circulos morados en el fondo -->
+      <div
+        class="fixed top-20 left-10 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="fixed bottom-20 right-10 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"
+      ></div>
+
+      <!-- aqui termina la linea de circulitosas -->
+      
+      <!-- barra de navegación -->
+<nav class="relative z-10 px-6 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="./logo.png" alt="Logo" class="logoCOD" />
+
+    </div>
+
+    <!-- menu secciones -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="./index.html" class="text-gray-300 hover:text-white transition-colors">
+        COD Viajes
+      </a>
+
+      <a href="./funcion.html" class="text-gray-300 hover:text-white transition-colors">
+        ¿Cómo Funciona?
+      </a>
+
+      <a href="./calendario.html" class="text-gray-300 hover:text-white transition-colors">
+        Calendario
+      </a>
+      <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+      Indispensable
+    </a>
+    
+     <a href="./referencias.html" class="text-gray-300 hover:text-white">
+      Referencias
+    </a>
+
+      <a href="./contacto.html" class="text-gray-300 hover:text-white transition-colors">
+        Contacto
+      </a>
+    </div>
+
+    <!-- Botón Mobile -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-white text-3xl"
+    >
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden mt-4 flex flex-col gap-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl"
+  >
+    <a href="./index.html" class="text-gray-300 hover:text-white">
+      COD Viajes
+    </a>
+
+    <a href="./funcion.html" class="text-gray-300 hover:text-white">
+      ¿Cómo Funciona?
+    </a>
+
+    <a href="./calendario.html" class="text-gray-300 hover:text-white">
+      Calendario
+    </a>
+
+    <a href="./indispensable.html" class="text-gray-300 hover:text-white">
+      Indispensable
+    </a>
+    
+     <a href="./referencias.html" class="text-gray-300 hover:text-white">
+      Referencias
+    </a>
+
+    <a href="./contacto.html" class="text-gray-300 hover:text-white">
+      Contacto
+    </a>
+  </div>
+</nav>
+
+
+<Section>
+
+<div class="text-center  py-10">
+  <!-- TÍTULO -->
+  <h2 class="text-4xl font-bold text-white mb-8">
+    MAPAS DE RECINTOS
+  </h2>
+
+  <!-- tarjetita -->
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- mapa captura -->
+    <img
+      src="./mapas/ESTADIO GNP.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Estadio GNP"
+    />
+
+    <!-- asas -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        ESTADIO GNP SEGUROS
+      </h3>
+
+      <p class="text-gray-400">
+        Normalmente nos estacionamos en la puerta 15 dentro del Estadio GNP, sin embargo el cupo del 
+estacionamiento está sujeto de disponibilidad del recinto. 
+Otra opción de estacionamiento es el del Palacio de los Deportes (por puerta 6), en ese caso tendrías que 
+caminar con dirección a Av. Río Churubusco y cruzar por el puente correspondiente hacia el Estadio GNP.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<BR>
+
+<div class="text-center  py-10">
+
+  <!-- CARD -->
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- IMAGEN -->
+    <img
+      src="./mapas/PALACIO.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Palacio de los Deportes"
+    />
+
+    <!-- CONTENIDO -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        PALACIO DE LOS DEPORTES
+      </h3>
+
+      <p class="text-gray-400">
+Normalmente utilizamos el estacionamiento de la puerta 6 del palacio de los deportes, el cual te da acceso directo a las puertas de la 6 a la 8 sin tener que salir. 
+La disponibilidad del estacionamiento siempre dependerá de las indicaciones y/o capacidad del recinto.       </p>
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+
+<div class="text-center  py-10">
+
+  <!-- Tarjeta -->
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- mapa imagen -->
+    <img
+      src="./mapas/ARENACDMX.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Arena cdmx"
+    />
+
+    <!--info del recinto  nombre  -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        ARENA CDMX
+      </h3>
+
+      <p class="text-gray-400">
+El estacionamiento de la Arena Ciudad de México es exclusivo para automóviles por lo cual nuestros transportes (tanto van como autobús) se quedan estacionados sobre la calle “av. de las Granjas”, pudiendo quedar tanto de lado derecho como de lado izquierdo, la altura siempre dependerá de la disponibilidad de espacio al momento de llegar al recinto.      </div>
+
+  </div>
+
+</div>
+<br>
+
+
+
+<div class="text-center  py-10">
+
+  <!-- Tarjeta -->
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- mapa imagen -->
+    <img
+      src="./mapas/PEPSICENTER.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Pepsi Center"
+    />
+
+    <!--info del recinto  nombre  -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        PEPSI CENTER WTC
+      </h3>
+
+      <p class="text-gray-400">
+El transporte para el Pepsi Center se queda sobre la calle Filadelfia (o alguna aledaña), solo tienes que caminar hasta el punto indicado o en caso de no encontrarlo cerca, el punto de reunión seria a la vuelta del Pepsi bajo la gran pantalla.
+  </div>
+
+</div>
+<br>
+
+</section>
+
+
+  
+       
+           
+    
+
+  
+      <!-- Modal -->
+      <div
+        id="modal"
+        class="fixed inset-0 z-50 hidden items-center justify-center p-4"
+      >
+        <div
+          class="absolute inset-0 bg-black/70 backdrop-blur-sm"
+          onclick="closeModal()"
+        ></div>
+        <div
+          class="relative bg-gradient-to-br from-gray-900 to-purple-900/50 rounded-3xl p-6 md:p-8 max-w-2xl w-full border border-white/20 max-h-[90%] overflow-auto"
+        >
+          <button
+            onclick="closeModal()"
+            class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
+          >
+            ×
+          </button>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="text-center  py-10">
+
+  <!-- Tarjeta -->
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- mapa imagen -->
+    <img
+      src="./mapas/AUDITORIOBB.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Auditorio BB"
+    />
+
+    <!--info del recinto  nombre  -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        AUDITORIO BB
+      </h3>
+
+      <p class="text-gray-400">
+El auditorio Black Berry no cuenta con estacionamiento por lo que el transporte hará el descenso y ascenso sobre la calle tlaxcala, enfrente del Seven Eleven que está en la esquina con Av. Insurgentes
+  </div>
+
+</div>
+<br>
+  <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- mapa imagen -->
+    <img
+      src="./mapas/NACIONAL.jpg"
+      class="w-[90%] h-[90%] object-cover center mx-auto  rounded-3xl"
+      alt="Auditorio NACIONAL"
+    />
+
+    <!--info del recinto  nombre  -->
+    <div class="p-6">
+      <h3 class="text-2xl font-bold text-white mb-3">
+        AUDITORIO NACIONAL
+      </h3>
+
+      <p class="text-gray-400">
+Normalmente el estacionamiento disponible para nuestros transportes para eventos en el Auditorio Nacional está enfrente del auditorio en Campo Militar Mart, aunque la disponibilidad siempre va a depender del recinto y las indicaciones que ellos tengan hacía nosotros.   </div>
+
+</div>
+
+<br>
+  </body>
+
+      <!-- Footer -->
+      <footer class="relative z-10 px-6 py-8 border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <div class="flex items-center gap-2">
+            <img src="./logo.png" alt="Guitarra" class="w-29 h-20" />
+            <span class="font-semibold">COD Espectaculos</span>
+          </div>
+          <p class="text-gray-500 text-sm">
+            © 2026 Cod Espectaculos. Todos los derechos reservados.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://www.instagram.com/codespectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >Instagram</a
+            >
+            <a
+              href="https://www.facebook.com/CODespectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >Facebook</a
+            >
+            <a
+              href="https://www.tiktok.com/@cod.espectaculos"
+              class="text-gray-400 hover:text-white transition-colors"
+              >TikTok</a
+            >
+          </div>
+        </div>
+      </footer>
+</html>
