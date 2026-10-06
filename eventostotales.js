@@ -392,7 +392,7 @@ const codviajes = [
     city: "ESTADIO BANORTE, CDMX",
     dates: [, "07 de Noviembre, 2026", "08 de Noviembre, 2026"],
     schedules: ["10:00 AM - Parque Juárez", "9:20 AM - Plaza La Noria"],
-    image: "./images/ULTRA.jpg",
+    image: "./images/Ultra.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -472,7 +472,7 @@ const codviajes = [
     city: "La Maraka, CDMX",
     dates: ["16 de Noviembre, 2026"],
     schedules: ["11:30 AM - Parque Juárez", "10:50 AM - Plaza La Noria"],
-    image: "./images/8TURN.jpg",
+    image: "./images/8turn.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -510,7 +510,7 @@ const codviajes = [
     city: "Palacio de los Deportes, CDMX",
     dates: ["19 de Noviembre, 2026", "20 de Noviembre, 2026"],
     schedules: ["9:30 AM - Parque Juárez", "1:00 PM - Parque Juárez", "8:50 AM - Plaza La Noria", "12:20 PM - Plaza La Noria"],
-    image: "./images/DIMASH.jpg",
+    image: "./images/Dimash.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -762,7 +762,7 @@ const codviajes = [
     city: "ARENA CDMX, CDMX",
     dates: ["03 de Diciembre, 2026", "04 de Diciembre, 2026"],
     schedules: ["11:30 AM - Parque Juárez", "2:00 PM - Parque Juárez", "10:50 AM - Plaza La Noria", "1:20 PM - Plaza La Noria"],
-    image: "./images/HUMBE.jpg",
+    image: "./images/Humbe.jpg",
     price: 665,
     originalPrice: 699,
     includes: [
@@ -781,7 +781,7 @@ const codviajes = [
     city: "Palacio de los Deportes, CDMX",
     dates: ["4 de Diciembre, 2026", "5 de Diciembre, 2026"],
     schedules: ["2:00 PM - Parque Juárez", "1:20 PM - Plaza La Noria"],
-    image: "./images/CAIFANES.jpg",
+    image: "./images/Caifanes.jpg",
     price: 665,
     originalPrice: 699,
     includes: [

@@ -108,92 +108,133 @@
     </a>
   </div>
 </nav>
+ <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
 
-<HR> <HR>
-         <!-- DE CODY ENSEÑANDO COMO ABORDAR -->
+         <!-- seccion de bolsas permitidas -->
       <section id="como-funciona" class="relative z-10 px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Cómo abordar?</h2>
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center"> INDISPENSABLE </h1>
+
+            <h3 class="text-3xl md:text-4xl font-bold mb-4"> BOLSAS PERMITIDAS </h3>
             <p class="text-gray-400">
-              En 3 simples pasos estarás listo para emprender tu viaje.
+              Estas pueden varias y depender según el evento y recinto al que asistas.
             </p>
           </div>
-          <div class="grid md:grid-cols-3 gap-8">
+          <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center p-6">
               <div
                 class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
             <img src="./recursos/Bolsa.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3">1. Bolsas permitidas</h3>
+              
               <p class="text-gray-400">
-                Bolsas transparentes de plásticos, vinil o pvc que no excedan 30x15x30cm 
+                Bolsas transparentes de plástico, vinil o PVC que no excedan 30 x 15 x 30 cm
               </p>
             </div>
             <div class="text-center p-6">
              <div
                 class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
-            <img src="./viajes/cody_papas.png" />
+            <img src="./recursos/Bolsa2.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3">2. Tome lo que incluye tu paquete</h3>
               <p class="text-gray-400">
-                Serian tus papas, agua y gafete conmemorativo. 
+                Bolsas de mano pequeñas (con o sin correa) que no excedan 11 x 16 cm
               </p>
             </div>
             <div class="text-center p-6">
             <div
                 class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
-            <img src="./viajes/cody_bus.png" />
+            <img src="./recursos/Bolsa3.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3">3. ¡Aborda tu unidad!</h3>
               <p class="text-gray-400">
-                Puedes pasar a abordar tu unidad correspondiente..
+                Bolsas de almacenamiento transparentes como ziploc o parecidas (medianas)
+              </p>
+            </div>
+            <div class="text-center p-6">
+            <div
+                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
+              >
+            <img src="./recursos/Bolsa4.png" />
+              </div>
+              <p class="text-gray-400">
+                Cangureras que no excedan 11 x 16 cm
               </p>
             </div>
           </div>
+          
         </div>
       </section>
 <HR> <HR>
-       </section>
-   <section id="como-funciona" class="relative z-10 px-6 py-16">
+
+  <!-- seccion de bolsas NOOO permitidas -->
+      <section id="como-funciona" class="relative z-10 px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4"> PUNTOS DE PARTIDA: </h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"> BOLSAS NO PERMITIDAS </h2>
             <p class="text-gray-400">
-              El de salida seria:
+              Estas pueden varias y depender según el evento y recinto al que asistas.
             </p>
           </div>
-          <div class="grid md:grid-cols-2 gap-8">
+          <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center p-6">
-                <div
+              <div
                 class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
-            <img  class="w-80 h-80 rounded-full object-cover" src="./viajes/salida1.png" />
+            <img src="./recursos/BolsaNo2.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3"> 1.- PLAZA LA NORIA </h3>
+              
               <p class="text-gray-400">
-                Calle 45 Pte. 22, Reserva Territorial Atlixcáyotl, La Noria, 72410 Heroica Puebla de Zaragoza, Pue.
+                Bolsa del diario
               </p>
             </div>
             <div class="text-center p-6">
-                <div
+             <div
                 class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
-            <img src="./viajes/salida.png" />
+            <img src="./recursos/BolsaNo4.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3"> 2.- DETRAS DELPARQUE JUÁREZ </h3>
               <p class="text-gray-400">
-               C. 4 Sur 206, Carmen Huexotitla, 72534 Heroica Puebla de Zaragoza, Pue.
+                Tote Bag grande
               </p>
             </div>
-            
+            <div class="text-center p-6">
+            <div
+                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
+              >
+            <img src="./recursos/BolsaNo1.png" />
+              </div>
+              <p class="text-gray-400">
+                Mochilas
+              </p>
+            </div>
+            <div class="text-center p-6">
+            <div
+                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
+              >
+            <img src="./recursos/BolsaNo3.png" />
+              </div>
+              <p class="text-gray-400">
+                Bolsas de mandado.
+              </p>
+            </div>
           </div>
+          
         </div>
       </section>
+
+
+
+   
 
        <HR>
         <HR>
@@ -202,50 +243,86 @@
    <section id="como-funciona" class="relative z-10 px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4"> REGRESOS: </h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"> OBJETOS NO PERMITIDOS EN EL RECINTO: </h2>
             <p class="text-gray-400">
-              El orden de llegada seria:
+              Pueden variar según el evento y recinto al que asista
             </p>
           </div>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center p-6">
-                <div
-                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
-              >
-            <img src="./viajes/llegada.png" />
-              </div>
-              <h3 class="text-xl font-semibold mb-3"> 1.- PLAZA TOLIN </h3>
-              <p class="text-gray-400">
-                Calz. Ignacio Zaragoza 411, San Pedro, 72210 Heroica Puebla de Zaragoza, Pue.
-              </p>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class=" p-6">
+                
+            <p class="text-gray-400">
+<ul style="list-style-type: disc;">
+  <li>No carteles de más de 11 x 43 cm</li>
+  <li>No pancartas ni postes</li>
+  <li>No cámaras profesionales (incluye cualquier cámara con lente extensible o adjuntable)</li>
+  <li>No equipo profesional de grabación de video o audio</li>
+  <li>No accesorios para cámaras (incluye palos para selfies, GoPros, estuches, trípodes, etc.)</li>
+  <li>No luces ni baterías, a excepción de baterías externas para celulares</li>
+  <li>No dispositivos electrónicos grandes (laptops, iPads, tabletas, lectores)</li>
+  <li>No ropa, disfraces o artículos personales que puedan obstaculizar la vista de los que están alrededor o detrás de ti</li>
+  <li>No cigarrillos, cajetillas abiertas o cerradas, vapes ni encendedores</li>
+  <li>No comida ni bebidas</li>
+  <li>No paraguas</li>
+  <li>Sustancias ilegales</li>
+  <li>Drogas o parafernalia</li>
+  <li>Masajeadores</li>
+  <li>Rayos láser</li>
+  <li>Luces químicas</li>
+  <li>Guantes de led</li>
+  <li>Medicamentos de venta libre</li>
+  <li>Peluches</li>
+  <li>Armas</li>
+</ul>
+             </p>
             </div>
             <div class="text-center p-6">
                 <div
-                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
+                class="w-[90%] h-[90%] mx-auto mb-6  rounded-2xl flex items-center justify-center"
               >
-            <img src="./viajes/llegada2.png" />
+            <img src="./recursos/OBJETOSNO.png" />
               </div>
-              <h3 class="text-xl font-semibold mb-3"> 2.- PARQUE JUÁREZ </h3>
-              <p class="text-gray-400">
-               Carmen Huexotitla, 72534 Heroica Puebla de Zaragoza, Pue.
-              </p>
+             
             </div>
-            <div class="text-center p-6">
-              <div
-                class="w-80 h-80 mx-auto mb-6  rounded-2xl flex items-center justify-center"
-              >
-            <img src="./viajes/llegada3.png" />
-              
-              </div>
-              <h3 class="text-xl font-semibold mb-3"> 3.- PLAZA LA NORIA. </h3>
-              <p class="text-gray-400">
-                 Circ. Interior, Cto Juan Pablo II 1936 Col, Ex-Hacienda, La Noria, 72410 Heroica Puebla de Zaragoza, Pue.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
 
+
+      <BR>
+    <section id="como-funciona" class="relative z-10 px-6 py-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4"> OBJETOS NO PERMITIDOS EN EL RECINTO: </h2>
+      <p class="text-gray-400">
+        Pueden variar según el evento y recinto al que asista
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="text-center p-6">
+          <div
+          class="w-[50%] h-[90%] mx-auto mb-6  rounded-2xl flex items-center justify-center"
+        >
+      <img src="./recursos/objetospermitidos.png" />
+        </div>
+       
+      </div>
+      <div class=" p-6">
+          
+      <p class="text-gray-400">
+<ul style="list-style-type: disc;">
+  <li>Tapones para oídos</li>
+  <li>Toallas y tampones (pieza individual encerrada)</li>
+  <li>Medicamentos con receta (sujeta a revisión)</li>
+  <li>Binoculares sin láser (sujetos a revisión)</li>
+</ul>
+       </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
 
 

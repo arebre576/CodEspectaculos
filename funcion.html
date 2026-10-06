@@ -108,7 +108,14 @@
     </a>
   </div>
 </nav>
+ <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
 
     <section id="como-funciona" class="relative z-10 px-6 py-16">
         <div class="max-w-7xl mx-auto">
