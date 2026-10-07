@@ -31,7 +31,7 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 7,
-    logo: `<img src="./logos/twodoor.png" class="w-full h-full object-contain" />`,
+    logo: `<img src="./logos/twodoor.png" class="w-[40%] sm:w-[30%] md:w-[25%] lg:w-[60%] h-auto object-contain mx-auto" />`,
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 12,
-    logo: `<img src="./logos/soyluna.png" class="w-full h-full object-contain" />`,
+logo: `<img src="./logos/soyluna.png" class="w-[40%] sm:w-[30%] md:w-[25%] lg:w-[60%] h-auto object-contain mx-auto" />`,
   },
 {
     id: 2,
@@ -69,7 +69,7 @@ const concertEvents = [
       "Gafete Conmemorativo",
     ],
     spots: 12,
-    logo: `<img src="./logos/martin.png" class="w-full h-full object-contain" />`,
+logo: `<img src="./logos/martin.png" class="w-[40%] sm:w-[30%] md:w-[25%] lg:w-[60%] h-auto object-contain mx-auto" />`,
   },
 ];
 
@@ -94,7 +94,7 @@ const monthNames = [
 ];
 
 let currentEventData = null;
-const WHATSAPP_NUMBER = "522225485659"; // Cambia este número por el tuyo
+const WHATSAPP_NUMBER = "522225485659"; // 
 
 function getEventsForDate(year, month, day) {
   return concertEvents.filter((event) => {
@@ -119,14 +119,14 @@ function renderCalendar() {
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
   const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();
 
-  // Previous month days
+  // dias del mes previ
   for (let i = firstDay - 1; i >= 0; i--) {
     const dayNum = daysInPrevMonth - i;
     const dayEl = createDayElement(dayNum, true, []);
     calendarGrid.appendChild(dayEl);
   }
 
-  // Current month days
+  // mes actal dias del calendario
   for (let day = 1; day <= daysInMonth; day++) {
     const events = getEventsForDate(currentYear, currentMonth, day);
     const isToday =
@@ -137,7 +137,7 @@ function renderCalendar() {
     calendarGrid.appendChild(dayEl);
   }
 
-  // Next month days
+  // diasss del mes siguiente
   const totalCells = calendarGrid.children.length;
   const remainingCells = 42 - totalCells;
   for (let i = 1; i <= remainingCells; i++) {
@@ -145,10 +145,11 @@ function renderCalendar() {
     calendarGrid.appendChild(dayEl);
   }
 }
+  // diasss del mes siguiente dayEl.className = `aspect-square overflow-hidden rounded-xl p-2 transition-all ${
 
 function createDayElement(day, isOtherMonth, events, isToday = false) {
   const dayEl = document.createElement("div");
-  dayEl.className = `min-h-[110px] rounded-xl p-2 transition-all ${
+  dayEl.className = `min-h-[80px] rounded-xl p-2 transition-all ${
     isOtherMonth
       ? "bg-slate-900/20 text-slate-700"
       : events.length > 0
@@ -175,13 +176,9 @@ function createDayElement(day, isOtherMonth, events, isToday = false) {
         "w-20 h-20 rounded-xl shadow-lg flex items-center justify-center event-indicator overflow-hidden";
       logoContainer.innerHTML = event.logo;
 
-      const eventTitle = document.createElement("p");
-      eventTitle.className =
-        "text-xs text-purple-300 font-bold text-center truncate w-full";
-      eventTitle.textContent = event.artist;
+      
 
       eventContainer.appendChild(logoContainer);
-      eventContainer.appendChild(eventTitle);
       dayEl.appendChild(eventContainer);
 
       dayEl.addEventListener("click", () => openEventModal(event));
@@ -251,11 +248,8 @@ function openReservationModal() {
   if (!currentEventData) return;
 
   const reservationModal = document.getElementById("reservation-modal");
-  const reservationEventTitle = document.getElementById(
-    "reservation-event-title"
-  );
+  
 
-  reservationEventTitle.textContent = `${currentEventData.artist} - ${currentEventData.date}`;
 
   generatePassengerForms(1);
 
