@@ -71,3 +71,40 @@ body {
 ul li::marker {
     color: #d4005c;
 }
+
+
+
+.carrusel-responsive {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.carrusel-responsive .carrusel-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* 📱 Solo celulares */
+@media (max-width: 576px) {
+
+    .carrusel-responsive {
+        width: 92%;
+    }
+
+    .carrusel-responsive .carrusel-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+
+
+.carrusel-responsive .carousel-control-prev {
+    left: 10px;
+}
+
+.carrusel-responsive .carousel-control-next {
+    right: 10px;
+}
