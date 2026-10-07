@@ -38,7 +38,7 @@ const codviajes = [
     artist: "Martin Garrix",
     tour: "Tour 2026",
     city: "Palacio de los Deportes, CDMX",
-    dates: ["16 de Octubre, 2026"],
+    dates: ["16 de Octubre, 2026",  "17 de Octubre, 2026"],
     schedules: ["2:00 PM - Parque Juárez", "1:20 PM - Plaza La Noria"],
     image: "./images/Garrix.jpg",
     price: 665,
