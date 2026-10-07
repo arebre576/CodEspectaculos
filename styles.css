@@ -89,7 +89,7 @@ ul li::marker {
 @media (max-width: 576px) {
 
     .carrusel-responsive {
-        width: 92%;
+        width: 85%;
     }
 
     .carrusel-responsive .carrusel-img {
