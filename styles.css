@@ -67,3 +67,7 @@ body {
     height: 100px;
     object-fit: contain;
 }
+
+ul li::marker {
+    color: #d4005c;
+}
